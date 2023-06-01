@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comedy Lab</title>
+    <link rel="shortcut icon" href="assets/images/logo-mobile.png">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        /* Here to avoid the horizonal slide bar due to the size of the banner image */
+        .header__img {
+            @media (min-width: 600px) {
+            max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="root">
+        <header class="header root-section">
+            <img srcset="assets/images/logo-mobile.png 100w, assets/images/logo.png 200w" sizes="(max-width: 600px) 68px, (min-width: 601px) 100px" src="assets/images/logo.png" alt="Logo">
+            <img src="assets/icons/menu.svg" alt="">
+            <img class="header__img" srcset="assets/images/banner-mobile.png.png 1668w, assets/images/banner.png 2388w" sizes="(max-width: 600px) 830px, (max-width: 1900px) 100vw, (min-width: 1901px) 1900px" src="assets/images/banner.png" alt="Comedy Lab Toronto">
+            <div class="header__social">
+                <img class="header__social-link" src="assets/icons/instagram.svg" alt="Instagram">
+                <img class="header__social-link" src="assets/icons/youtube.svg" alt="YouTube">
+                <img class="header__social-link" src="assets/icons/facebook.svg" alt="Facebook">
+                <img class="header__social-link" src="assets/icons/eventbrite.svg" alt="Eventbrite">
+            </div>
+        </header>
+    </div>
 </body>
 </html>
