@@ -1,3 +1,35 @@
 @use '../abstracts/colors' as c;
 @use '../abstracts/fonts' as f;
 @use '../abstracts/mixins' as *;
+
+.header {
+    position: relative;
+    display: grid;
+    grid-template: 83px 398px / 50% 50%;
+    align-items: center;
+    background-color: c.$bg-main-lt;
+    overflow: hidden;
+}
+
+.header__home {
+    margin-left: 5vw;
+}
+
+.header__menu {
+    justify-self: end;
+    margin-right: 5vw;
+}
+
+.header__banner {
+    grid-column-end: span 2;
+    justify-self: center;
+}
+
+.header__social {
+    position: absolute;
+    bottom: 60px;
+    left: 13%;
+    display: flex;
+    justify-content: space-around;
+    width: 74%;
+}

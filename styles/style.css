@@ -1,1 +1,36 @@
-/*# sourceMappingURL=style.css.map */
+.header {
+  position: relative;
+  display: grid;
+  grid-template: 83px 398px/50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #790069;
+  overflow: hidden;
+}
+
+.header__home {
+  margin-left: 5vw;
+}
+
+.header__menu {
+  justify-self: end;
+  margin-right: 5vw;
+}
+
+.header__banner {
+  grid-column-end: span 2;
+  justify-self: center;
+}
+
+.header__social {
+  position: absolute;
+  bottom: 60px;
+  left: 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 74%;
+}/*# sourceMappingURL=style.css.map */
