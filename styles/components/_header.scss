@@ -3,11 +3,14 @@
 @use '../abstracts/mixins' as *;
 
 .header {
+    background-color: c.$bg-main-lt;
+}
+
+.header__container {
     position: relative;
     display: grid;
     grid-template: 83px 398px / 50% 50%;
     align-items: center;
-    background-color: c.$bg-main-lt;
     overflow: hidden;
 }
 
@@ -29,7 +32,23 @@
     position: absolute;
     bottom: 60px;
     left: 13%;
+    width: 74%;
+}
+
+.header__social>ul {
     display: flex;
     justify-content: space-around;
-    width: 74%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__social-link {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.header__icon {
+    width: 100%;
 }
