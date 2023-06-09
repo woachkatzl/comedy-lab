@@ -1,0 +1,55 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/fonts' as f;
+@use '../abstracts/mixins' as *;
+
+
+//Backkground color should extend to side of the max-width of the content
+.landing-main {
+    background-color: c.$bg-main-dk;
+}
+
+.landing-container,
+.landing-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.landing-block {
+    width: 89%;
+    padding: 40px 35px;
+    box-sizing: border-box;
+}
+
+.landing-block--light {
+    background-color: c.$bg-content-main;
+}
+
+.landing-block--gradient {
+    background-image: linear-gradient(c.$bg-content-main, c.$bg-content-grdt);
+}
+
+.landing-block__title {
+    @include section-title-mbl;
+    margin: 0 0 30px;
+}
+
+.landing-block__sub-title {
+    @include hlt-txt-mbl;
+    margin: 25px 0 0;
+}
+
+.landing-block__txt {
+    @include main-txt-mbl;
+}
+
+.landing-block__content {
+    text-align: center;
+}
+
+.landing-block__title--dark,
+.landing-block__txt--dark,
+.landing-block__sub-title {
+    color: c.$txt-color-dk;
+}
