@@ -84,23 +84,24 @@ a {
   row-gap: 50px;
 }
 
-.landing-block {
+.block {
   width: 89%;
   padding: 40px 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.landing-block--light {
+.block--light {
   background-color: #FFAF00;
+  color: #2D0042;
 }
 
-.landing-block--gradient {
+.block--gradient {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FFAF00), to(#FF920A));
   background-image: linear-gradient(#FFAF00, #FF920A);
 }
 
-.landing-block__title {
+.block__title {
   font-family: "Lobster", cursive;
   font-style: normal;
   font-weight: 400;
@@ -110,7 +111,7 @@ a {
   margin: 0 0 30px;
 }
 
-.landing-block__sub-title {
+.block__sub-title {
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -119,7 +120,7 @@ a {
   margin: 25px 0 0;
 }
 
-.landing-block__txt {
+.block__txt {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -127,12 +128,6 @@ a {
   line-height: 1.625rem;
 }
 
-.landing-block__content {
+.block__content {
   text-align: center;
-}
-
-.landing-block__title--dark,
-.landing-block__txt--dark,
-.landing-block__sub-title {
-  color: #2D0042;
 }/*# sourceMappingURL=style.css.map */

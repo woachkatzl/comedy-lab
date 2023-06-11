@@ -16,40 +16,36 @@
     row-gap: 50px;
 }
 
-.landing-block {
+.block {
     width: 89%;
     padding: 40px 35px;
     box-sizing: border-box;
 }
 
-.landing-block--light {
+// The dark text color is inherited for this block
+.block--light {
     background-color: c.$bg-content-main;
+    color: c.$txt-color-dk;
 }
 
-.landing-block--gradient {
+.block--gradient {
     background-image: linear-gradient(c.$bg-content-main, c.$bg-content-grdt);
 }
 
-.landing-block__title {
+.block__title {
     @include section-title-mbl;
     margin: 0 0 30px;
 }
 
-.landing-block__sub-title {
+.block__sub-title {
     @include hlt-txt-mbl;
     margin: 25px 0 0;
 }
 
-.landing-block__txt {
+.block__txt {
     @include main-txt-mbl;
 }
 
-.landing-block__content {
+.block__content {
     text-align: center;
-}
-
-.landing-block__title--dark,
-.landing-block__txt--dark,
-.landing-block__sub-title {
-    color: c.$txt-color-dk;
 }
