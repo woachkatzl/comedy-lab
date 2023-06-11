@@ -32,6 +32,31 @@
     background-image: linear-gradient(c.$bg-content-main, c.$bg-content-grdt);
 }
 
+// BUTTON STYLES
+
+.block__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 56px;
+    margin-top: 25px;
+    @include center;
+    @include hlt-txt-mbl;
+}
+
+.block__btn--hlt {
+    background-color: c.$hlt-main;
+    color: c.$txt-color-lt;
+}
+
+.block__btn--clear {
+    border: 2px solid c.$bg-main-dk;
+    color: c.$txt-color-dk;
+}
+
+// TEXT STYLES
+
 .block__title {
     @include section-title-mbl;
     margin: 0 0 30px;
