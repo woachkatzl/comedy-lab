@@ -16,9 +16,11 @@
     row-gap: 50px;
 }
 
+// BLOCK STYLES
+
 .block {
     width: 89%;
-    padding: 40px 35px;
+    padding: 40px 10%;
     box-sizing: border-box;
 }
 
@@ -30,6 +32,30 @@
 
 .block--gradient {
     background-image: linear-gradient(c.$bg-content-main, c.$bg-content-grdt);
+}
+
+// SHOW STYLES
+
+.block__shows {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.block__show-link--shadow {
+    //box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    ;
+}
+
+.block__show-img {
+    min-width: 105%;
+    max-width: 105%;
+}
+
+.block__show-img--shadow {
+    min-width: 100%;
+    max-width: 100%;
 }
 
 // BUTTON STYLES

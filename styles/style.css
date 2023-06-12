@@ -86,7 +86,7 @@ a {
 
 .block {
   width: 89%;
-  padding: 40px 35px;
+  padding: 40px 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -99,6 +99,32 @@ a {
 .block--gradient {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FFAF00), to(#FF920A));
   background-image: linear-gradient(#FFAF00, #FF920A);
+}
+
+.block__shows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.block__show-link--shadow {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.block__show-img {
+  min-width: 105%;
+  max-width: 105%;
+}
+
+.block__show-img--shadow {
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .block__btn {
@@ -139,7 +165,7 @@ a {
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 3.125rem;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 0 30px;
 }
 
