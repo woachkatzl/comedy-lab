@@ -16,6 +16,10 @@
     row-gap: 50px;
 }
 
+.landing-container {
+    padding-bottom: 80px;
+}
+
 // BLOCK STYLES
 
 .block {
@@ -32,6 +36,12 @@
 
 .block--gradient {
     background-image: linear-gradient(c.$bg-content-main, c.$bg-content-grdt);
+    color: c.$txt-color-dk;
+}
+
+.block--dark {
+    color: c.$txt-color-lt;
+    border: 2px solid c.$hlt-second;
 }
 
 // SHOW STYLES
@@ -39,21 +49,17 @@
 .block__shows {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
+    margin: 30px 0 40px;
 }
 
-.block__show-link--shadow {
-    //box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+.block__show-link {
+    line-height: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     ;
 }
 
 .block__show-img {
-    min-width: 105%;
-    max-width: 105%;
-}
-
-.block__show-img--shadow {
     min-width: 100%;
     max-width: 100%;
 }
@@ -66,7 +72,7 @@
     align-items: center;
     width: 200px;
     height: 56px;
-    margin-top: 25px;
+    margin-top: 30px;
     @include center;
     @include hlt-txt-mbl;
 }
@@ -93,10 +99,15 @@
     margin: 25px 0 0;
 }
 
+.block__sub-title--hlt {
+    text-align: center;
+    margin: 60px 0 35px;
+}
+
 .block__txt {
     @include main-txt-mbl;
 }
 
-.block__content {
+.block__sub-title--center {
     text-align: center;
 }
