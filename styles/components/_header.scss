@@ -38,8 +38,6 @@
 .header__social>ul {
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
-    @include clear-mp;
 }
 
 .header__social-link {
