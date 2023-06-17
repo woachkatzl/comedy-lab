@@ -1,0 +1,13 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/fonts' as f;
+@use '../abstracts/mixins' as *;
+
+.copyright {
+    padding: 40px 0;
+    background-color: c.$bg-main-dk;
+}
+
+.copyright__text {
+    @include copy-txt-mbl;
+    text-align: center;
+}

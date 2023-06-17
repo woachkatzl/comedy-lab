@@ -6,7 +6,43 @@
     background-color: c.$bg-main-lt;
 }
 
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 56px 0;
+    text-align: center;
+}
+
 .footer__contact,
+.footer__social,
 .footer__link {
     color: c.$txt-color-lt;
+}
+
+.footer__social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.footer__social-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.footer__icon {
+    width: 100%;
+}
+
+.footer__title {
+    margin-top: 0;
+    @include footer-title-mbl;
+}
+
+.footer__text,
+.footer_link {
+    @include footer-txt-mbl;
 }
