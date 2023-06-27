@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/511ea3d44b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="root">
@@ -110,22 +110,28 @@
                 <section class="block block--dark">
                     <h2 class="block__title">Our Blog</h2>
                     <p class="block__txt">Want to know more about the Comedy Lab and the Toronto scene as a whole? We’ve got you covered. A couple members of our team used to be a copywriters so they put out comedy related articles every week or so (we try to be consistent but life happens). Head on over to read what we’ve got to say.</p>
+                    <a class="block__btn block__btn--clear-dk" href="#">Comedy Lab Blog</a>
                 </section>
+                <img class="graffiti" srcset="assets/images/graffiti-mobile.png 739w, assets/images/graffiti-desktop.png 1478w" sizes="(max-width: 350px) 90vw, (max-width: 400px) 86vw, (max-width: 485px) 76vw, (max-width: 600px) 66vw, (max-width: 1900px) 47vw, (min-width: 1901px) 893px" src="assets/images/graffiti-mobile.png" alt="Comedy Lab Graffiti">
             </div>
         </main>
         <footer class="footer">
             <div class="footer__container root-section">
                 <div class="footer__contact">
                     <h3 class="footer__title">Contact Us</h3>
-                    <ul>
-                        <li>
-                            <a href="tel:+16474474830" class="footer__link"><i class="fa-solid fa-phone"></i> 647-447-4830</a>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="tel:+16474474830">
+                                <i class="bi bi-telephone-fill footer__icon"></i>
+                                <span>647-447-4830</span>
+                            </a>
                         </li>
-                        <li>
-                            <p class="footer__text"><i class="fa-solid fa-envelope"></i> comedylab@gmail.com</p>
+                        <li class="footer__list-item">
+                            <i class="bi bi-envelope-fill footer__icon"></i>
+                            <span>comedylab@gmail.com</span>
                         </li>
-                        <li>
-                            <p class="footer__text"><i class="fa-solid fa-location-dot"></i> The Lab416 <br> 298 Brunswick Ave, Toronto</p>
+                        <li class="footer__list-item">
+                            <span><i class="bi bi-geo-alt-fill footer__icon"></i>The Lab416<br>298 Brunswick Ave, Toronto</span>
                         </li>
                     </ul>
                 </div>
@@ -133,16 +139,16 @@
                     <h3 class="footer__title">Social Media</h3>
                     <ul class="footer__social-links">
                         <li><a class="footer__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==">
-                            <img class="footer__icon" src="assets/icons/instagram.svg" alt="Instagram">
+                            <img class="footer__social-icon" src="assets/icons/instagram.svg" alt="Instagram">
                         </a></li>
                         <li><a class="footer__social-link" href="https://www.youtube.com/@werdentertainment/">
-                            <img class="footer__icon" src="assets/icons/youtube.svg" alt="YouTube">
+                            <img class="footer__social-icon" src="assets/icons/youtube.svg" alt="YouTube">
                         </a></li>
                         <li><a class="footer__social-link" href="https://www.facebook.com/thecomedylabto">
-                            <img class="footer__icon" src="assets/icons/facebook.svg" alt="Facebook">
+                            <img class="footer__social-icon" src="assets/icons/facebook.svg" alt="Facebook">
                         </a></li>
                         <li><a class="footer__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893">
-                            <img class="footer__icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
+                            <img class="footer__social-icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
                         </a></li>
                     </ul>
                 </div>
@@ -151,10 +157,9 @@
         </footer>
         <div class="copyright">
             <p class="copyright__text">&#169; Comedy Lab 2023</p>
-            <p class="copyright__text">All images and content may not be used <br> without permission</p>
+            <p class="copyright__text">All images and content may not be used <br> without permission</p>           
         </div>
     </div>
-
     
 </body>
 </html>

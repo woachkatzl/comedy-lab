@@ -17,6 +17,7 @@
 }
 
 .landing-container {
+    position: relative;
     padding-bottom: 80px;
 }
 
@@ -25,7 +26,7 @@
 .block {
     width: 89%;
     padding: 40px 10%;
-    box-sizing: border-box;
+    //box-sizing: border-box;
 }
 
 // The dark text color is inherited for this block
@@ -40,6 +41,7 @@
 }
 
 .block--dark {
+    padding-bottom: 100px;
     color: c.$txt-color-lt;
     border: 2px solid c.$hlt-second;
 }
@@ -64,12 +66,19 @@
     max-width: 100%;
 }
 
+// GRAFFITI
+
+.graffiti {
+    position: absolute;
+    left: -10px;
+    bottom: -2%;
+    transform: rotate(-5deg);
+}
+
 // BUTTON STYLES
 
 .block__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     width: 200px;
     height: 56px;
     margin-top: 30px;
@@ -85,6 +94,10 @@
 .block__btn--clear {
     border: 2px solid c.$bg-main-dk;
     color: c.$txt-color-dk;
+}
+
+.block__btn--clear-dk {
+    border: 2px solid c.$hlt-second;
 }
 
 // TEXT STYLES
