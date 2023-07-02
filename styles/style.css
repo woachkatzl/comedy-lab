@@ -120,6 +120,10 @@ ul {
   border: 2px solid #08C0C6;
 }
 
+.block--centered {
+  text-align: center;
+}
+
 .block__shows {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,8 +211,8 @@ ul {
 }
 
 .block__sub-title--hlt {
-  text-align: center;
   margin: 60px 0 35px;
+  text-align: center;
 }
 
 .block__txt {
@@ -217,10 +221,6 @@ ul {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.625rem;
-}
-
-.block__sub-title--center {
-  text-align: center;
 }
 
 .footer {

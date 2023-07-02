@@ -46,6 +46,10 @@
     border: 2px solid c.$hlt-second;
 }
 
+.block--centered {
+    text-align: center;
+}
+
 // SHOW STYLES
 
 .block__shows {
@@ -113,14 +117,10 @@
 }
 
 .block__sub-title--hlt {
-    text-align: center;
     margin: 60px 0 35px;
+    text-align: center;
 }
 
 .block__txt {
     @include main-txt-mbl;
-}
-
-.block__sub-title--center {
-    text-align: center;
 }
