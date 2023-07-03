@@ -109,6 +109,7 @@
 .block__title {
     @include section-title-mbl;
     margin: 0 0 30px;
+    text-align: start
 }
 
 .block__sub-title {
@@ -123,4 +124,39 @@
 
 .block__txt {
     @include main-txt-mbl;
+}
+
+//DESKTOP WIDTH STYLES
+
+@media (min-width: 601px) {
+
+    .landing-intro {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 87%;
+    }
+
+    // BLOCK STYLES
+    .block {
+        width: 87%;
+        padding: 70px 8%;
+    }
+
+    .block--narrow {
+        width: 47%;
+    }
+
+    // TEXT STYLES
+    .block__title {
+        @include section-title-dsk;
+    }
+
+    .block__sub-title {
+        @include hlt-txt-dsk;
+    }
+
+    .block__txt {
+        @include main-txt-dsk;
+    }
 }

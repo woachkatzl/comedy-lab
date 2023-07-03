@@ -230,6 +230,7 @@ ul {
   line-height: 3.125rem;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 0 30px;
+  text-align: start;
 }
 
 .block__sub-title {
@@ -254,6 +255,50 @@ ul {
   line-height: 1.625rem;
 }
 
+@media (min-width: 601px) {
+  .landing-intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 87%;
+  }
+  .block {
+    width: 87%;
+    padding: 70px 8%;
+  }
+  .block--narrow {
+    width: 47%;
+  }
+  .block__title {
+    font-family: "Lobster", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 5rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .block__sub-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .block__txt {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
 .footer {
   color: #FFFFFF;
   background-color: #790069;
