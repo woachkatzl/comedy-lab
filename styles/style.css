@@ -155,6 +155,10 @@ ul {
   text-align: center;
 }
 
+.block__menu-img {
+  display: none;
+}
+
 .block__shows {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,16 +280,26 @@ ul {
   .block--narrow {
     width: 47%;
   }
+  .block__menu-img {
+    display: block;
+    float: right;
+    width: 350px;
+    margin-top: 60px;
+    margin-left: 40px;
+  }
   .block__btn {
     width: 252px;
     height: 67px;
-    margin-top: 80px;
+    margin-top: 50px;
     font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 1.75rem;
     line-height: 2rem;
     text-align: center;
+  }
+  .block__btn--hlt {
+    margin-top: 80px;
   }
   .block__title {
     margin: 0 0 50px;
