@@ -3,7 +3,7 @@
 @use '../abstracts/mixins' as *;
 
 
-//Backkground color should extend to side of the max-width of the content
+//Background color should extend to side of the max-width of the content
 .landing-main {
     background-color: c.$bg-main-dk;
 }
@@ -147,8 +147,18 @@
         width: 47%;
     }
 
+    // BUTTON STYLES
+
+    .block__btn {
+        width: 252px;
+        height: 67px;
+        margin-top: 80px;
+        @include btn-txt-dsk;
+    }
+
     // TEXT STYLES
     .block__title {
+        margin: 0 0 50px;
         @include section-title-dsk;
     }
 
@@ -158,5 +168,9 @@
 
     .block__txt {
         @include main-txt-dsk;
+    }
+
+    .block__time {
+        font-size: 1.5rem;
     }
 }

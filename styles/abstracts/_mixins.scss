@@ -92,6 +92,15 @@
     text-align: center;
 }
 
+@mixin btn-txt-dsk {
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
 //HIGHLIGHT TEXT
 @mixin hlt-txt-mbl {
     font-family: f.$hlt-txt;
