@@ -383,6 +383,10 @@ ul {
 }
 
 .footer__container {
+  padding: 70px 0;
+}
+
+.footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,7 +398,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 70px 0;
   text-align: center;
 }
 
@@ -444,6 +447,64 @@ ul {
   margin-right: 10px;
 }
 
+@media (min-width: 601px) {
+  .footer__container {
+    padding: 145px 6.5% 70px;
+  }
+  .footer__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: start;
+  }
+  .footer__title {
+    margin-bottom: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+  .footer__contact {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer__list {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+  .footer__list-item {
+    margin-bottom: 20px;
+  }
+  .footer__icon {
+    margin-right: 15px;
+  }
+  .footer__social-links {
+    width: 235px;
+  }
+  .footer__social-link {
+    width: 40px;
+    height: 40px;
+  }
+  .footer__logo {
+    -ms-flex-preferred-size: 230px;
+        flex-basis: 230px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
 .copyright {
   padding: 40px 0;
   background-color: #2D0042;
@@ -458,4 +519,16 @@ ul {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
+}
+
+@media (min-width: 601px) {
+  .copyright__text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
 }/*# sourceMappingURL=style.css.map */

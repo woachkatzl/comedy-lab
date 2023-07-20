@@ -127,6 +127,14 @@
     line-height: 1.625rem;
 }
 
+@mixin footer-title-dsk {
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.75rem;
+}
+
 //FOOTER CONTENT TEXT
 @mixin footer-txt-mbl {
     font-family: f.$hlt-txt;
@@ -136,6 +144,14 @@
     line-height: 1.875rem;
 }
 
+@mixin footer-txt-dsk {
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+}
+
 //COPYRIGHT TEXT
 @mixin copy-txt-mbl {
     font-family: f.$hlt-txt;
@@ -143,6 +159,16 @@
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.125rem;
+    text-align: center;
+    color: c.$txt-color-fade;
+}
+
+@mixin copy-txt-dsk {
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
     text-align: center;
     color: c.$txt-color-fade;
 }

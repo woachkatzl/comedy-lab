@@ -11,3 +11,12 @@
     @include copy-txt-mbl;
     text-align: center;
 }
+
+//DESKTOP WIDTH STYLES
+
+@media (min-width: 601px) {
+
+    .copyright__text {
+        @include copy-txt-dsk;
+    }
+}
