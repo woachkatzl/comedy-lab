@@ -51,7 +51,8 @@
 }
 
 .block__menu-img,
-.block__mic-img {
+.block__mic-img,
+.sticky-container {
     display: none;
 }
 
@@ -145,6 +146,33 @@
         justify-content: space-between;
         align-items: stretch;
         width: 87%;
+    }
+
+    // STICKY SOCIAL
+
+    .sticky-container {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6.5%;
+        height: 90%;
+    }
+
+    .sticky-social {
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sticky__social-link {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-top: 17px;
     }
 
     // BLOCK STYLES
