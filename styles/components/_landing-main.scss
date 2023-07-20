@@ -90,7 +90,7 @@
     @include flex-center;
     width: 200px;
     height: 56px;
-    margin-top: 30px;
+    margin-top: 40px;
     @include center;
     @include hlt-txt-mbl;
 }
@@ -137,6 +137,7 @@
 
     .landing-container {
         row-gap: 100px;
+        padding-bottom: 200px;
     }
 
     .landing-intro {
@@ -160,20 +161,9 @@
         position: relative;
     }
 
-    .block__menu-img {
-        display: block;
-        float: right;
-        width: 350px;
-        margin-top: 60px;
-        margin-left: 40px;
-    }
-
-    .block__mic-img {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 38%;
+    .block__content {
+        display: grid;
+        grid-template-columns: 40% 60%;
     }
 
     // SHOW STYLES
@@ -185,6 +175,29 @@
 
     .block__shows--two {
         width: 65.4%;
+    }
+
+    // IMAGES
+
+    .block__menu-img {
+        display: block;
+        float: right;
+        width: 350px;
+        margin-top: 60px;
+        margin-left: 130px;
+    }
+
+    .block__mic-img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 38%;
+        max-width: 560px;
+    }
+
+    .graffiti {
+        bottom: -220px;
     }
 
     // BUTTON STYLES
@@ -202,6 +215,10 @@
 
     .block__btn--padded {
         margin-bottom: 50px;
+    }
+
+    .block__btn--clear-dk {
+        margin-right: 0;
     }
 
     // TEXT STYLES
@@ -225,5 +242,16 @@
 
     .block__time {
         font-size: 1.5rem;
+    }
+}
+
+// WIDE SCREEN STYLES
+
+@media (min-width: 1901px) {
+
+    // GRAFFITI
+
+    .graffiti {
+        bottom: -270px;
     }
 }

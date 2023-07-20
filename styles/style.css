@@ -1,6 +1,6 @@
 .root-section {
   min-width: 300px;
-  max-width: 1920px;
+  max-width: 1900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -22,7 +22,7 @@ ul {
 }
 
 .header {
-  background-color: #790069;
+  background-color: #2D0042;
 }
 
 .header__container {
@@ -33,6 +33,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  background-color: #790069;
 }
 
 .header__home {
@@ -203,7 +204,7 @@ ul {
           align-items: center;
   width: 200px;
   height: 56px;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Source Sans Pro", sans-serif;
@@ -263,6 +264,7 @@ ul {
 @media (min-width: 601px) {
   .landing-container {
     row-gap: 100px;
+    padding-bottom: 200px;
   }
   .landing-intro {
     -webkit-box-orient: horizontal;
@@ -287,19 +289,9 @@ ul {
   .block--gradient {
     position: relative;
   }
-  .block__menu-img {
-    display: block;
-    float: right;
-    width: 350px;
-    margin-top: 60px;
-    margin-left: 40px;
-  }
-  .block__mic-img {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 38%;
+  .block__content {
+    display: grid;
+    grid-template-columns: 40% 60%;
   }
   .block__shows {
     -webkit-box-orient: horizontal;
@@ -310,6 +302,24 @@ ul {
   }
   .block__shows--two {
     width: 65.4%;
+  }
+  .block__menu-img {
+    display: block;
+    float: right;
+    width: 350px;
+    margin-top: 60px;
+    margin-left: 130px;
+  }
+  .block__mic-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 38%;
+    max-width: 560px;
+  }
+  .graffiti {
+    bottom: -220px;
   }
   .block__btn {
     width: 252px;
@@ -327,6 +337,9 @@ ul {
   }
   .block__btn--padded {
     margin-bottom: 50px;
+  }
+  .block__btn--clear-dk {
+    margin-right: 0;
   }
   .block__title {
     margin: 0 0 50px;
@@ -357,6 +370,11 @@ ul {
   }
   .block__time {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 1901px) {
+  .graffiti {
+    bottom: -270px;
   }
 }
 .footer {
