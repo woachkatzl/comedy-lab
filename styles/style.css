@@ -68,15 +68,12 @@ ul {
   position: absolute;
   bottom: 60px;
   left: 13%;
-  width: 74%;
-}
-
-.header__social > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 74%;
 }
 
 .header__social-link {

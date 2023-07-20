@@ -149,6 +149,7 @@
     }
 
     // STICKY SOCIAL
+    // Created a container with absolute position to keep other elements in place. Other option was to try grid instead of Flexbox for layout of blocks.
 
     .sticky-container {
         display: block;
