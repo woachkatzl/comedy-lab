@@ -92,6 +92,11 @@
     .footer__social-link {
         width: 40px;
         height: 40px;
+        transition: transform .3s;
+    }
+
+    .footer__social-link:hover {
+        transform: scale(1.2);
     }
 
     .footer__logo {

@@ -74,5 +74,10 @@
     .header__social-link {
         width: 30px;
         height: 30px;
+        transition: transform .3s;
+    }
+
+    .header__social-link:hover {
+        transform: scale(1.3);
     }
 }

@@ -26,7 +26,7 @@ ul {
 }
 
 .header {
-  background-color: #2D0042;
+  background-color: #27003E;
 }
 
 .header__container {
@@ -37,7 +37,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  background-color: #790069;
+  background-color: #6D0064;
 }
 
 .header__home {
@@ -101,10 +101,18 @@ ul {
   .header__social-link {
     width: 30px;
     height: 30px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+  .header__social-link:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 .landing-main {
-  background-color: #2D0042;
+  background-color: #27003E;
 }
 
 .landing-container,
@@ -218,7 +226,7 @@ ul {
 }
 
 .block__btn--clear {
-  border: 2px solid #2D0042;
+  border: 2px solid #27003E;
   color: #2D0042;
 }
 
@@ -304,7 +312,15 @@ ul {
     display: block;
     width: 30px;
     height: 30px;
-    margin-top: 17px;
+    margin-top: 20px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+  .sticky__social-link:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
   .block {
     width: 87%;
@@ -406,7 +422,7 @@ ul {
 }
 .footer {
   color: #FFFFFF;
-  background-color: #790069;
+  background-color: #6D0064;
 }
 
 .footer__container {
@@ -519,6 +535,14 @@ ul {
   .footer__social-link {
     width: 40px;
     height: 40px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+  .footer__social-link:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .footer__logo {
     -ms-flex-preferred-size: 230px;
@@ -530,7 +554,7 @@ ul {
 }
 .copyright {
   padding: 40px 0;
-  background-color: #2D0042;
+  background-color: #27003E;
 }
 
 .copyright__text {
