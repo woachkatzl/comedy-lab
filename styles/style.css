@@ -183,6 +183,10 @@ ul {
   line-height: 0;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .block__show-img {
@@ -223,15 +227,40 @@ ul {
 .block__btn--hlt {
   background-color: #D73202;
   color: #FFFFFF;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .block__btn--clear {
   border: 2px solid #27003E;
   color: #2D0042;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .block__btn--clear-dk {
   border: 2px solid #08C0C6;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.block__btn--hlt:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.block__btn--clear:hover {
+  background-color: #2D0042;
+  color: #FFAF00;
+}
+
+.block__btn--clear-dk:hover {
+  background-color: #08C0C6;
+  color: #27003E;
 }
 
 .block__title {
@@ -336,6 +365,10 @@ ul {
   .block__content {
     display: grid;
     grid-template-columns: 40% 60%;
+  }
+  .block__show-link:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .block__shows {
     -webkit-box-orient: horizontal;
