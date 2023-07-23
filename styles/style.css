@@ -170,9 +170,13 @@ ul {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+.header__nav-link:hover {
+  font-weight: 500;
+}
+
 .header__nav-list > li:hover {
-  -webkit-transform: translateX(-15px);
-          transform: translateX(-15px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header__menu-bg {
@@ -205,6 +209,13 @@ ul {
 .change #bar3 {
   -webkit-transform: translateY(-6px) rotateZ(-45deg);
           transform: translateY(-6px) rotateZ(-45deg);
+}
+
+.hover-bg {
+  width: 350px;
+  height: 350px;
+  -webkit-transform: translate(45%, -50%);
+          transform: translate(45%, -50%);
 }
 
 .change-bg {

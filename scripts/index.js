@@ -15,5 +15,15 @@ const menuOnClick = () => {
     menuPop.classList.toggle("change-bg");
 }
 
+const menuHover = () => {
+    menuPop.classList.add("hover-bg");
+}
+
+const menuUnhover = () => {
+    menuPop.classList.remove("hover-bg");
+}
+
 // EVENT LISTENERS
 menuBtn.addEventListener("click", menuOnClick);
+menuBtn.addEventListener("mouseover", menuHover);
+menuBtn.addEventListener("mouseout", menuUnhover);

@@ -118,9 +118,13 @@
     transition: transform .3s;
 }
 
+.header__nav-link:hover {
+    font-weight: 500;
+}
+
 .header__nav-list>li:hover {
-    transform: translateX(-15px);
-    //transform: scale(1.1);
+    //transform: translateX(-15px);
+    transform: scale(1.1);
 }
 
 //Header pop-up menu background. Positioned absolute
@@ -152,6 +156,12 @@
 
 .change #bar3 {
     transform: translateY(-6px) rotateZ(-45deg);
+}
+
+.hover-bg {
+    width: 350px;
+    height: 350px;
+    transform: translate(45%, -50%);
 }
 
 .change-bg {
