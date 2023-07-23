@@ -16,11 +16,29 @@
 <body>
     <div class="root">
         <header class="header">
-            <header class="header__container root-section">
+            <div class="header__container root-section">
                 <a class="header__home" href="index.html">
                     <img class="header__logo" src="assets/images/logo.svg" alt="Logo">
                 </a>
-                <img class="header__menu" src="assets/icons/menu.svg" alt="">
+                <div id="header-menu" class="header__menu">
+                    <div id="header-menu-btn" class="header__menu-btn">
+                        <div id="bar1" class="header__menu-bar"></div>
+                        <div id="bar2" class="header__menu-bar"></div>
+                        <div id="bar3" class="header__menu-bar"></div>
+                    </div>
+                    <nav id="header-nav" class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a class="header__nav-link" href="index.html">Home</a></li>
+                            <li><a class="header__nav-link" href="#about">About us</a></li>
+                            <li><a class="header__nav-link" href="#monthly-shows">Monthly shows</a></li>
+                            <li><a class="header__nav-link" href="#weekly-shows">Weekly shows</a></li>
+                            <li><a class="header__nav-link" href="#open-mics">Open mics</a></li>
+                            <li><a class="header__nav-link" href="#">Blog</a></li>
+                            <li><a class="header__nav-link" href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="header-menu-bg" class="header__menu-bg"></div>
 
                 <img class="header__banner" srcset="assets/images/banner-mobile.png 1668w, assets/images/banner.png 2386w" sizes="(max-width: 600px) 830px, (max-width: 1900px) 100vw, (min-width: 1901px) 1900px" src="assets/images/banner.png" alt="Comedy Lab Toronto">
 
@@ -38,7 +56,7 @@
                         <img class="boxed-icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
                     </a></li>
                 </ul>
-            </header>
+            </div>
         </header>
         
         <main class="landing-main">
@@ -62,7 +80,7 @@
 
                 <div class="landing-intro">
                     <section class="block block--light block--narrow">
-                        <h2 class="block__title">About Us</h2>
+                        <h2 id="about" class="block__title">About Us</h2>
                         <p class="block__txt">The Comedy Lab is Toronto’s first black-owned comedy club founded in 2022. What does that mean? Well, we focus on diversity more than any other club. We pride ourselves on filling our lineups with comics from all walks of life. We were tired of seeing mostly white male lineups as the sad standard for “the most multicultural city in the world.” So we created the Comedy Lab to give a new home to minority comics.</p>
                         <p class="block__txt">Variety is the spice of life. Come see the spiciest comedy in the GTA really offers.</p>
                     </section>
@@ -87,7 +105,7 @@
                 </section>
 
                 <section class="block block--gradient">
-                    <h2 class="block__title">Monthly Shows</h2>
+                    <h2 id="monthly-shows" class="block__title">Monthly Shows</h2>
                     <p class="block__txt">A collection of featured monthly shows produced by our parent company Werd Entertainment. These are the hottest shows in the GTA. Note some monthly shows take place at other venues.</p>
                     <div class="block__shows">
                         <a href="https://www.eventbrite.ca/e/heat-wave-comedy-tickets-569796104487?aff=ebdsoporgprofile" class="block__show-link">
@@ -100,7 +118,7 @@
                             <img class="block__show-img" srcset="assets/images/dope-mobile.png 550w, assets/images/dope.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/dope.png" alt="Dope Comedy">
                         </a>
                     </div>
-                    <h2 class="block__title">Weekly Shows</h2>
+                    <h2 id="weekly-shows" class="block__title">Weekly Shows</h2>
                     <p class="block__txt">These shows happen every week, rain or shine. The best date night in the Annex. Catch these shows every week, unless it’s a MAJOR holiday.</p>
                     <div class="block__shows">
                         <a href="https://www.eventbrite.ca/e/thursday-laugh-therapy-tickets-317216221257?aff=Site" class="block__show-link">
@@ -113,7 +131,7 @@
                             <img class="block__show-img" srcset="assets/images/saturday-mobile.png 550w, assets/images/saturday.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/saturday.png" alt="Lost in the Sauce Comedy, Saturday">
                         </a>
                     </div>
-                    <h2 class="block__title">Open Mics</h2>
+                    <h2 id="open-mics" class="block__title">Open Mics</h2>
                     <p class="block__txt">Want to test your skills or watch comics hone theirs? These are the shows for you!</p>
                     <div class="block__shows block__shows--two">
                         <a href="https://www.eventbrite.ca/e/thursday-night-mics-tickets-311306134027?aff=ebdsoporgprofile" class="block__show-link">
@@ -180,7 +198,7 @@
                         </ul>
                     </div>
 
-                    <img class="footer__logo" src="assets/images/footer-logo.svg" width="150px" alt="Logo">
+                    <img class="footer__logo" src="assets/images/footer-logo.svg" width="150" alt="Logo">
                 </div>
 
             </div>
@@ -192,5 +210,6 @@
         </div>
     </div>
     
+    <script src="scripts/index.js"></script>
 </body>
 </html>

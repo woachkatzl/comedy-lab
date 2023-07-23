@@ -25,11 +25,6 @@
     width: 68px;
 }
 
-.header__menu {
-    justify-self: end;
-    margin-right: 10%;
-}
-
 .header__banner {
     grid-column-end: span 2;
     justify-self: center;
@@ -50,14 +45,138 @@
     height: 25px;
 }
 
+// BURGER MENU
+
+//Header menu container
+.header__menu {
+    justify-self: end;
+    margin-right: 10%;
+}
+
+#header-menu {
+    z-index: 2;
+}
+
+.header__menu-bg,
+.header__menu-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header__menu-absolute {
+    padding: 40px 20px;
+}
+
+//Header menu button styling
+.header__menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.header__menu-bar {
+    height: 3px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: block;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+#bar1 {
+    transform: translateY(-10px);
+}
+
+#bar3 {
+    transform: translateY(10px);
+}
+
+//Header navigation menu
+.header__nav {
+    transition: 0.5s ease;
+    display: none;
+}
+
+.header__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.header__nav-link {
+    @include nav-txt-dsk;
+    color: c.$txt-color-dk;
+}
+
+.header__nav-list>li {
+    transition: transform .3s;
+}
+
+.header__nav-list>li:hover {
+    transform: translateX(-15px);
+    //transform: scale(1.1);
+}
+
+//Header pop-up menu background. Positioned absolute
+.header__menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, c.$bg-content-main, c.$bg-content-grdt);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+//Toggled styles for pop-up menu
+.change {
+    display: block;
+}
+
+.change .header__menu-bar {
+    background-color: c.$txt-color-dk;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(-45deg);
+}
+
+.change-bg {
+    width: 700px;
+    height: 850px;
+    transform: translate(57%, -45%);
+}
+
+// DESKTOP WIDTH STYLES
 @media (min-width: 601px) {
 
     .header__container {
         grid-template: [header-bar-start] 100px [header-bar-end] auto / 1fr [header-social-start] 285px [header-social-end] 1fr;
     }
 
+    .header__home {
+        margin-left: 14%;
+    }
+
     .header__logo {
         width: 100px;
+    }
+
+    .header__menu {
+        margin-right: 14%;
     }
 
     .header__banner {

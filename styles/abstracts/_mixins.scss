@@ -23,28 +23,6 @@
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-//DARK TITLE TEXT
-// @mixin section-title-mbl-dk {
-//     font-family: f.$title-txt;
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 2.5rem;
-//     line-height: 3.125rem;
-//     color: c.$txt-color-dk;
-//     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-// }
-
-//LIGHT TITLE TEXT
-// @mixin section-title-mbl-lt {
-//     font-family: f.$title-txt;
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 2.5rem;
-//     line-height: 3.125rem;
-//     color: c.$txt-color-lt;
-//     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-// }
-
 //MAIN TEXT
 @mixin main-txt-mbl {
     font-family: f.$main-txt;
@@ -60,26 +38,6 @@
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 2rem;
-}
-
-//DARK MAIN TEXT
-@mixin main-txt-mbl-dk {
-    font-family: f.$main-txt;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.625rem;
-    color: c.$txt-color-dk;
-}
-
-//LIGHT MAIN TEXT
-@mixin main-txt-mbl-lt {
-    font-family: f.$main-txt;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.625rem;
-    color: c.$txt-color-lt;
 }
 
 //BUTTON TEXT
@@ -115,6 +73,15 @@
     font-style: normal;
     font-weight: 400;
     font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+//HEADER NAVIGATION TEXT
+@mixin nav-txt-dsk {
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
     line-height: 2.5rem;
 }
 
