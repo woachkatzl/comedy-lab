@@ -12,6 +12,10 @@
     text-align: center;
 }
 
+.copyright__text::selection {
+    background-color: c.$bg-main-lt;
+}
+
 //DESKTOP WIDTH STYLES
 
 @media (min-width: 601px) {

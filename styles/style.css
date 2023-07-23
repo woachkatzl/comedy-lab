@@ -445,6 +445,24 @@ ul {
   line-height: 1.625rem;
 }
 
+::-moz-selection {
+  color: #FFFFFF;
+  background-color: #27003E;
+}
+
+::selection {
+  color: #FFFFFF;
+  background-color: #27003E;
+}
+
+.block--dark *::-moz-selection {
+  background-color: #08C0C6;
+}
+
+.block--dark *::selection {
+  background-color: #08C0C6;
+}
+
 @media (min-width: 601px) {
   .landing-container {
     top: -50px;
@@ -765,6 +783,14 @@ ul {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
+}
+
+.copyright__text::-moz-selection {
+  background-color: #6D0064;
+}
+
+.copyright__text::selection {
+  background-color: #6D0064;
 }
 
 @media (min-width: 601px) {

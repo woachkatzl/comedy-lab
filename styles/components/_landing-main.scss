@@ -151,6 +151,16 @@
     @include main-txt-mbl;
 }
 
+//TEXT HIGHLIGHT
+::selection {
+    color: c.$txt-color-lt;
+    background-color: c.$bg-main-dk;
+}
+
+.block--dark *::selection {
+    background-color: c.$hlt-second;
+}
+
 //DESKTOP WIDTH STYLES
 
 @media (min-width: 601px) {
