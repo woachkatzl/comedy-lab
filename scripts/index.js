@@ -16,15 +16,15 @@ const menuOnClick = () => {
     nav.classList.toggle("change");
     menuPop.classList.toggle("change-bg");
     menuUnhover();
-}
+};
 
 const menuHover = () => {
     menuPop.classList.add("hover-bg");
-}
+};
 
 const menuUnhover = () => {
     menuPop.classList.remove("hover-bg");
-}
+};
 
 // EVENT LISTENERS
 menuBtn.addEventListener("click", menuOnClick);
@@ -38,4 +38,4 @@ pageLinks.forEach(anchor => {
             behavior: "smooth"
         });
     });
-})
+});
