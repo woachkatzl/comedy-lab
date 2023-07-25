@@ -161,3 +161,10 @@
     justify-content: center;
     align-items: center;
 }
+
+//CENTERED VERTICAL FLEX
+@mixin flex-center-vert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

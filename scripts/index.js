@@ -6,6 +6,13 @@ const headerMenu = document.querySelector("#header-menu");
 
 const pageLinks = document.querySelectorAll('a[href^="#"]');
 
+const stickySocialBtn = document.querySelector(".sticky-social__btn");
+const stickyShareIcon = document.querySelector(".sticky-social__img");
+const stickyShareWord = document.querySelector(".sticky-social__text");
+const stickyLinksContainer = document.querySelector("#sticky-links");
+const stickyArrow = document.querySelector("#sticky-arrow");
+const stickyDrop = document.querySelector("#sticky-drop");
+
 // FUNCTIONS
 const menuOnClick = () => {
     // Switching between these two classes for header menu container for positioning of its content
@@ -26,6 +33,30 @@ const menuUnhover = () => {
     menuPop.classList.remove("hover-bg");
 };
 
+const stickyHover = () => {
+    stickyShareIcon.setAttribute("src", "assets/icons/share-icon-dark.svg");
+    stickyShareWord.setAttribute("src", "assets/icons/share-dark.svg");
+    stickyArrow.classList.add("sticky-social__arrow");
+}
+
+const stickyUnhover = () => {
+    if (!stickyLinksContainer.classList.contains("sticky-social__list--visible")) {
+        stickyShareIcon.setAttribute("src", "assets/icons/share-icon.svg");
+        stickyShareWord.setAttribute("src", "assets/icons/share.svg");
+        stickyArrow.classList.remove("sticky-social__arrow");
+    }
+}
+
+const stickyClick = () => {
+    stickyArrow.classList.toggle("sticky-social__arrow-fade");
+    stickySocialBtn.classList.toggle("sticky-social__btn--on");
+
+    stickyLinksContainer.classList.toggle("sticky-social__list--visible");
+    stickyLinksContainer.classList.toggle("sticky-social__list");
+
+    stickyDrop.classList.toggle("sticky-social__drop");
+}
+
 // EVENT LISTENERS
 menuBtn.addEventListener("click", menuOnClick);
 menuBtn.addEventListener("mouseover", menuHover);
@@ -39,3 +70,7 @@ pageLinks.forEach(anchor => {
         });
     });
 });
+
+stickySocialBtn.addEventListener("mouseover", stickyHover);
+stickySocialBtn.addEventListener("mouseout", stickyUnhover);
+stickySocialBtn.addEventListener("click", stickyClick);

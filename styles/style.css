@@ -575,7 +575,12 @@ ul {
     width: 87%;
   }
   .sticky-container {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -584,7 +589,15 @@ ul {
   }
   .sticky-social {
     position: sticky;
-    top: 0;
+    top: 20%;
+    width: 80%;
+    height: 26.5rem;
+    color: #FF920A;
+    overflow: hidden;
+  }
+  .sticky-social__btn {
+    position: relative;
+    z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -595,21 +608,104 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    border: 3px solid #FF920A;
+    border-radius: 15px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
-  .sticky__social-link {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin-top: 20px;
+  .sticky-social__btn--on {
+    background-color: #FF920A;
+  }
+  .sticky-social__img {
+    margin-top: 10px;
+    width: 50%;
+  }
+  .sticky-social__text {
+    width: 80%;
+    margin: 10px 0 15px;
+  }
+  #sticky-links {
+    position: relative;
+    z-index: 1;
+    top: -250px;
+  }
+  .sticky-social__list {
+    display: none;
+  }
+  .sticky-social__list--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+  }
+  .sticky-social__link {
+    font-size: 2rem;
+  }
+  .sticky-social__arrow {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #FF920A;
+    -webkit-transition: border-top-color 0.3s, -webkit-transform 0.3s;
+    transition: border-top-color 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, border-top-color 0.3s;
+    transition: transform 0.3s, border-top-color 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translateY(140%);
+            transform: translateY(140%);
+  }
+  .sticky-social__arrow-fade {
+    -webkit-transition: border-top-color 0.3s, -webkit-transform 0.3s;
+    transition: border-top-color 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, border-top-color 0.3s;
+    transition: transform 0.3s, border-top-color 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translateY(310px);
+            transform: translateY(310px);
+    border-top: 0;
+    border-bottom: 20px solid #FF920A;
+  }
+  #sticky-drop {
+    position: absolute;
+    top: 0;
+  }
+  .sticky-social__drop--hidden {
+    height: 0;
+    -webkit-transition: height 0.3s linear 0s;
+    transition: height 0.3s linear 0s;
+  }
+  .sticky-social__drop {
+    border: 3px solid #FF920A;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: height 0.3s linear 0s;
+    transition: height 0.3s linear 0s;
+  }
+  .sticky-social__btn:hover {
+    cursor: pointer;
+    background-color: #FF920A;
+  }
+  .sticky-social__list > li {
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
   }
-  .sticky__social-link:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+  .sticky-social__list > li:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .block--gradient {
     position: relative;
