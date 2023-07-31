@@ -14,219 +14,217 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="root">
-        <header class="header">
-            <div class="header__container root-section">
-                <a class="header__home" href="index.html">
-                    <img class="header__logo" src="assets/images/logo.svg" alt="Logo">
-                </a>
-                <div id="header-menu" class="header__menu">
-                    <div id="header-menu-btn" class="header__menu-btn">
-                        <div id="bar1" class="header__menu-bar"></div>
-                        <div id="bar2" class="header__menu-bar"></div>
-                        <div id="bar3" class="header__menu-bar"></div>
-                    </div>
-                    <nav id="header-nav" class="header__nav">
-                        <ul class="header__nav-list">
-                            <li><a class="header__nav-link" href="index.html">Home</a></li>
-                            <li><a class="header__nav-link" href="#about">About us</a></li>
-                            <li><a class="header__nav-link" href="#monthly-shows">Monthly shows</a></li>
-                            <li><a class="header__nav-link" href="#weekly-shows">Weekly shows</a></li>
-                            <li><a class="header__nav-link" href="#open-mics">Open mics</a></li>
-                            <li><a class="header__nav-link" href="#">Blog</a></li>
-                            <li><a class="header__nav-link" href="#">Contact us</a></li>
-                        </ul>
-                    </nav>
+    <header class="header">
+        <div class="header__container root-section">
+            <a class="header__home" href="index.html">
+                <img class="header__logo" src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <div id="header-menu" class="header__menu">
+                <div id="header-menu-btn" class="header__menu-btn">
+                    <div id="bar1" class="header__menu-bar"></div>
+                    <div id="bar2" class="header__menu-bar"></div>
+                    <div id="bar3" class="header__menu-bar"></div>
                 </div>
-                <div id="header-menu-bg" class="header__menu-bg"></div>
-
-                <img class="header__banner" srcset="assets/images/banner-mobile.png 1668w, assets/images/banner.png 2386w" sizes="(max-width: 768px) 830px, (max-width: 1900px) 100vw, (min-width: 1901px) 1900px" src="assets/images/banner.png" alt="Comedy Lab Toronto">
-
-                <ul class="header__social">
-                    <li><a class="header__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank">
-                        <img class="boxed-icon" src="assets/icons/instagram.svg" alt="Instagram">
-                    </a></li>
-                    <li><a class="header__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank">
-                        <img class="boxed-icon" src="assets/icons/youtube.svg" alt="YouTube">
-                    </a></li>
-                    <li><a class="header__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank">
-                        <img class="boxed-icon" src="assets/icons/facebook.svg" alt="Facebook">
-                    </a></li>
-                    <li><a class="header__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">
-                        <img class="boxed-icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
-                    </a></li>
-                </ul>
+                <nav id="header-nav" class="header__nav">
+                    <ul class="header__nav-list">
+                        <li><a class="header__nav-link" href="index.html">Home</a></li>
+                        <li><a class="header__nav-link" href="#about">About us</a></li>
+                        <li><a class="header__nav-link" href="#monthly-shows">Monthly shows</a></li>
+                        <li><a class="header__nav-link" href="#weekly-shows">Weekly shows</a></li>
+                        <li><a class="header__nav-link" href="#open-mics">Open mics</a></li>
+                        <li><a class="header__nav-link" href="#">Blog</a></li>
+                        <li><a class="header__nav-link" href="#">Contact us</a></li>
+                    </ul>
+                </nav>
             </div>
-        </header>
-        
-        <main class="landing-main">
-            <div class="landing-container root-section">
-                <div class="sticky-container">
-                    <div class="sticky-social">
-                        
-                        <div class="sticky-social__btn">
-                            <img class="sticky-social__img" src="assets/icons/share-icon.svg" alt="Share icon">
-                            <img class="sticky-social__text" src="assets/icons/share.svg" alt="Share">
-                            <div id="sticky-arrow"></div>
-                        </div>
-                        
-                        <ul id="sticky-links" class="sticky-social__list">
-                            <li><a class="sticky-social__link" id="sticky-facebook-share" target="_blank">
-                                <i class="bi bi-facebook"></i>
-                            </a></li>
-                            <li><a class="sticky-social__link" id="sticky-whatsapp-share" target="_blank">
-                                <i class="bi bi-whatsapp"></i>
-                            </a></li>
-                            <li><a class="sticky-social__link" id="sticky-twitter-share" target="_blank">
-                                <i class="bi bi-twitter"></i>
-                            </a></li>
-                            <li><a class="sticky-social__link" id="sticky-reddit-share" target="_blank">
-                                <i class="bi bi-reddit"></i>
-                            </a></li>
-                            <li><a class="sticky-social__link" id="sticky-email-share" target="_blank">
-                                <i class="bi bi-envelope-at"></i>
-                            </a></li>
-                        </ul>
+            <div id="header-menu-bg" class="header__menu-bg"></div>
 
-                        <div id="sticky-drop" class="sticky-social__drop--hidden"></div>
+            <img class="header__banner" srcset="assets/images/banner-mobile.png 1668w, assets/images/banner.png 2386w" sizes="(min-width: 1901px) 1900px,(min-width: 768px) 100vw, 830px" src="assets/images/banner-mobile.png" alt="Comedy Lab Toronto">
 
-                    </div>
-                </div>
-
-                <div class="landing-intro">
-                    <section class="block block--light block--narrow">
-                        <h2 id="about" class="block__title">About Us</h2>
-                        <p class="block__txt">The Comedy Lab is Toronto’s first black-owned comedy club founded in 2022. What does that mean? Well, we focus on diversity more than any other club. We pride ourselves on filling our lineups with comics from all walks of life. We were tired of seeing mostly white male lineups as the sad standard for “the most multicultural city in the world.” So we created the Comedy Lab to give a new home to minority comics.</p>
-                        <p class="block__txt">Variety is the spice of life. Come see the spiciest comedy in the GTA really offers.</p>
-                    </section>
-                    <section class="block block--light block--centered block--narrow">
-                        <h2 class="block__title">Show Times</h2>
-                        <h3 class="block__sub-title">Thursdays</h3>
-                        <p class="block__txt block__time">Pro/Am 8:00-9:30 & Mic 10:00-12:30</p>
-                        <h3 class="block__sub-title">Fridays</h3>
-                        <p class="block__txt block__time">Pro 8:00-9:30 & Mic 10:00-1:30</p>
-                        <h3 class="block__sub-title">Saturdays</h3>
-                        <p class="block__txt block__time">Pro 8:00-9:30 & 10:00-11:45</p>
-                        <a class="block__btn block__btn--hlt" href=" https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">Get Tickets!</a>
-                    </section>
-                </div>
-
-                <section class="block block--light">
-                    <img class="block__menu-img" src="assets/images/menu.png" alt="The Lab burger and fries">
-                    <h2 class="block__title">Menu</h2>
-                    <p class="block__txt">We do have food! Well, the bar upstairs does. Here’s the menu. Yep, you can eat and even order food during the show.</p>
-                    <p class="block__txt">Pro Tip: Add an egg to your burger <br> *Ask nicely & tip well.</p>
-                    <a class="block__btn block__btn--clear" href="https://thelab416.com/#menu" target="_blank">LAB416 Menu</a>
-                </section>
-
-                <section class="block block--gradient">
-                    <h2 id="monthly-shows" class="block__title">Monthly Shows</h2>
-                    <p class="block__txt">A collection of featured monthly shows produced by our parent company Werd Entertainment. These are the hottest shows in the GTA. Note some monthly shows take place at other venues.</p>
-                    <div class="block__shows">
-                        <a class="block__show-link" href="https://www.eventbrite.ca/e/heat-wave-comedy-tickets-569796104487?aff=ebdsoporgprofile" target="_blank">
-                            <img class="block__show-img" srcset="assets/images/heatwave-mobile.png 550w, assets/images/heatwave.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/heatwave.png" alt="Heat Wave Comedy">
-                        </a>
-                        <a class="block__show-link" href="https://www.universe.com/users/tokin-comedy-810ZTY" target="_blank">
-                            <img class="block__show-img" srcset="assets/images/tokin-mobile.png 550w, assets/images/tokin.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/tokin.png" alt="Tokin' Comedy">
-                        </a>
-                        <a class="block__show-link" href="https://www.eventbrite.ca/cc/dope-comedy-broken-cage-gallery-1060609" target="_blank">
-                            <img class="block__show-img" srcset="assets/images/dope-mobile.png 550w, assets/images/dope.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/dope.png" alt="Dope Comedy">
-                        </a>
-                    </div>
-                    <h2 id="weekly-shows" class="block__title">Weekly Shows</h2>
-                    <p class="block__txt">These shows happen every week, rain or shine. The best date night in the Annex. Catch these shows every week, unless it’s a MAJOR holiday.</p>
-                    <div class="block__shows">
-                        <a class="block__show-link" href="https://www.eventbrite.ca/e/thursday-laugh-therapy-tickets-317216221257?aff=Site" target="_blank">
-                            <img class="block__show-img" srcset="assets/images/thursday-mobile.png 550w, assets/images/thursday.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/thursday.png" alt="Thursty Thursday Comedy">
-                        </a>
-                        <a class="block__show-link" href="https://www.eventbrite.ca/e/fckin-funny-fridays-tickets-230082692527?aff=Site" target="_blank">
-                            <img class="block__show-img" srcset="assets/images/friday-mobile.png 550w, assets/images/friday.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/friday.png" alt="Broken Record Comedy, Friday">
-                        </a>
-                        <a class="block__show-link" href="https://www.eventbrite.ca/e/saturday-night-satire-tickets-273881265237?aff=Site" target="_blank">
-                            <img class="block__show-img" srcset="assets/images/saturday-mobile.png 550w, assets/images/saturday.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/saturday.png" alt="Lost in the Sauce Comedy, Saturday">
-                        </a>
-                    </div>
-                    <h2 id="open-mics" class="block__title">Open Mics</h2>
-                    <p class="block__txt">Want to test your skills or watch comics hone theirs? These are the shows for you!</p>
-                    <div class="block__shows block__shows--two">
-                        <a class="block__show-link" href="https://www.eventbrite.ca/e/thursday-night-mics-tickets-311306134027?aff=ebdsoporgprofile" target="_blank">
-                            <img class="block__show-img" srcset="assets/images/thur-mic-mobile.png 550w, assets/images/thur-mic.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/thur-mic.png" alt="Thursday Open Mic">
-                        </a>
-                        <a class="block__show-link" href="https://www.eventbrite.ca/e/friday-night-mics-tickets-271346022257?aff=ebdsoporgprofile" target="_blank">
-                            <img class="block__show-img" srcset="assets/images/fri-mic-mobile.png 550w, assets/images/fri-mic.png 740w" sizes="(max-width: 600px) 300px, (max-width: 1900px) 756px, (min-width: 1901px) 756px" src="assets/images/fri-mic.png" alt="Friday Open Mic">
-                        </a>
-                    </div>
-                    <p class="block__sub-title block__sub-title--hlt">Are you a comic and want to perform with us? Fill out this form and if you’re good we’ll be in touch!</p>
-                    <a class="block__btn block__btn--clear block__btn--padded" href="https://docs.google.com/forms/d/e/1FAIpQLSd5J5SbKdFbzXbxspB2AC1iYqagCPmb0pFELQq1CcjW_Cq32g/viewform?usp=sf_link" target="_blank">Sign-Up Form</a>
-                    <img class="block__mic-img" src="assets/images/mic.svg" alt="Mic">
-                </section>
-
-                <section class="block block--dark">
-                    <div class="block__content">
-                        <h2 class="block__title">Our Blog</h2>
-                        <p class="block__txt">Want to know more about the Comedy Lab and the Toronto scene as a whole? We’ve got you covered. A couple members of our team used to be a copywriters so they put out comedy related articles every week or so (we try to be consistent but life happens). Head on over to read what we’ve got to say.</p>
-                    </div>
-                    <a class="block__btn block__btn--clear-dk" href="#">Comedy Lab Blog</a>
-                </section>
-                
-                <img class="graffiti" srcset="assets/images/graffiti-mobile.png 518w, assets/images/graffiti.png 1176w" sizes="(max-width: 350px) 80vw, (max-width: 400px) 75vw, (max-width: 485px) 65vw, (max-width: 600px) 55vw, (max-width: 1023px) 45vw, (max-width: 1900px) 550px, (min-width: 1901px) 700px" src="assets/images/graffiti-mobile.png" alt="Comedy Lab Graffiti">
-            </div>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__container root-section">
-                <div class="footer__content">
-                    <div class="footer__contact">
-                        <h3 class="footer__title">Contact Us:</h3>
-                        <ul class="footer__list">
-                            <li class="footer__list-item">
-                                <a href="tel:+16474474830">
-                                    <i class="bi bi-telephone-fill footer__icon"></i>
-                                    <span>647-447-4830</span>
-                                </a>
-                            </li>
-                            <li class="footer__list-item">
-                                <i class="bi bi-envelope-fill footer__icon"></i>
-                                <span>comedylab@gmail.com</span>
-                            </li>
-                            <li class="footer__list-item">
-                                <span><i class="bi bi-geo-alt-fill footer__icon"></i>The Lab416<br>298 Brunswick Ave, Toronto</span>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__social">
-                        <h3 class="footer__title">Social Media:</h3>
-                        <ul class="footer__social-links">
-                            <li><a class="footer__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank">
-                                <img class="boxed-icon" src="assets/icons/instagram.svg" alt="Instagram">
-                            </a></li>
-                            <li><a class="footer__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank">
-                                <img class="boxed-icon" src="assets/icons/youtube.svg" alt="YouTube">
-                            </a></li>
-                            <li><a class="footer__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank">
-                                <img class="boxed-icon" src="assets/icons/facebook.svg" alt="Facebook">
-                            </a></li>
-                            <li><a class="footer__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">
-                                <img class="boxed-icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
-                            </a></li>
-                        </ul>
-                    </div>
-
-                    <img class="footer__logo" src="assets/images/footer-logo.svg" width="150" alt="Logo">
-                </div>
-
-                <div class="footer__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.16258982973!2d-79.41013572405562!3d43.665588251629906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34941ef4c6e1%3A0xbb29d4692292b41a!2sThe%20Lab416%20(Labyrinth%20Lounge)!5e0!3m2!1sen!2sca!4v1690076226721!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-            </div>
-        </footer>
-
-        <div class="copyright">
-            <p class="copyright__text">&#169; Comedy Lab 2023</p>
-            <p class="copyright__text">All images and content may not be used <br> without permission</p>           
+            <ul class="header__social">
+                <li><a class="header__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank">
+                    <img class="boxed-icon" src="assets/icons/instagram.svg" alt="Instagram">
+                </a></li>
+                <li><a class="header__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank">
+                    <img class="boxed-icon" src="assets/icons/youtube.svg" alt="YouTube">
+                </a></li>
+                <li><a class="header__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank">
+                    <img class="boxed-icon" src="assets/icons/facebook.svg" alt="Facebook">
+                </a></li>
+                <li><a class="header__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">
+                    <img class="boxed-icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
+                </a></li>
+            </ul>
         </div>
+    </header>
+    
+    <main class="landing-main">
+        <div class="landing-container root-section">
+            <div class="sticky-container">
+                <div class="sticky-social">
+                    
+                    <div class="sticky-social__btn">
+                        <img class="sticky-social__img" src="assets/icons/share-icon.svg" alt="Share icon">
+                        <img class="sticky-social__text" src="assets/icons/share.svg" alt="Share">
+                        <div id="sticky-arrow"></div>
+                    </div>
+                    
+                    <ul id="sticky-links" class="sticky-social__list">
+                        <li><a class="sticky-social__link" id="sticky-facebook-share" href="" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a></li>
+                        <li><a class="sticky-social__link" id="sticky-whatsapp-share" href="" target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a></li>
+                        <li><a class="sticky-social__link" id="sticky-twitter-share" href="" target="_blank">
+                            <i class="bi bi-twitter"></i>
+                        </a></li>
+                        <li><a class="sticky-social__link" id="sticky-reddit-share" href="" target="_blank">
+                            <i class="bi bi-reddit"></i>
+                        </a></li>
+                        <li><a class="sticky-social__link" id="sticky-email-share" href="" target="_blank">
+                            <i class="bi bi-envelope-at"></i>
+                        </a></li>
+                    </ul>
+
+                    <div id="sticky-drop" class="sticky-social__drop--hidden"></div>
+
+                </div>
+            </div>
+
+            <div class="landing-intro">
+                <section class="block block--light block--narrow">
+                    <h2 id="about" class="block__title">About Us</h2>
+                    <p class="block__txt">The Comedy Lab is Toronto’s first black-owned comedy club founded in 2022. What does that mean? Well, we focus on diversity more than any other club. We pride ourselves on filling our lineups with comics from all walks of life. We were tired of seeing mostly white male lineups as the sad standard for “the most multicultural city in the world.” So we created the Comedy Lab to give a new home to minority comics.</p>
+                    <p class="block__txt">Variety is the spice of life. Come see the spiciest comedy in the GTA really offers.</p>
+                </section>
+                <section class="block block--light block--centered block--narrow">
+                    <h2 class="block__title">Show Times</h2>
+                    <h3 class="block__sub-title">Thursdays</h3>
+                    <p class="block__txt block__time">Pro/Am 8:00-9:30 & Mic 10:00-12:30</p>
+                    <h3 class="block__sub-title">Fridays</h3>
+                    <p class="block__txt block__time">Pro 8:00-9:30 & Mic 10:00-1:30</p>
+                    <h3 class="block__sub-title">Saturdays</h3>
+                    <p class="block__txt block__time">Pro 8:00-9:30 & 10:00-11:45</p>
+                    <a class="block__btn block__btn--hlt" href=" https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">Get Tickets!</a>
+                </section>
+            </div>
+
+            <section class="block block--light">
+                <img class="block__menu-img" src="assets/images/menu.png" alt="The Lab burger and fries">
+                <h2 class="block__title">Menu</h2>
+                <p class="block__txt">We do have food! Well, the bar upstairs does. Here’s the menu. Yep, you can eat and even order food during the show.</p>
+                <p class="block__txt">Pro Tip: Add an egg to your burger <br> *Ask nicely & tip well.</p>
+                <a class="block__btn block__btn--clear" href="https://thelab416.com/#menu" target="_blank">LAB416 Menu</a>
+            </section>
+
+            <section class="block block--gradient">
+                <h2 id="monthly-shows" class="block__title">Monthly Shows</h2>
+                <p class="block__txt">A collection of featured monthly shows produced by our parent company Werd Entertainment. These are the hottest shows in the GTA. Note some monthly shows take place at other venues.</p>
+                <div class="block__shows">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/heat-wave-comedy-tickets-569796104487?aff=ebdsoporgprofile" target="_blank">
+                        <img class="block__show-img" srcset="assets/images/heatwave-mobile.png 550w, assets/images/heatwave.png 740w" sizes="300px" src="assets/images/heatwave-mobile.png" alt="Heat Wave Comedy">
+                    </a>
+                    <a class="block__show-link" href="https://www.universe.com/users/tokin-comedy-810ZTY" target="_blank">
+                        <img class="block__show-img" srcset="assets/images/tokin-mobile.png 550w, assets/images/tokin.png 740w" sizes="300px" src="assets/images/tokin-mobile.png" alt="Tokin' Comedy">
+                    </a>
+                    <a class="block__show-link" href="https://www.eventbrite.ca/cc/dope-comedy-broken-cage-gallery-1060609" target="_blank">
+                        <img class="block__show-img" srcset="assets/images/dope-mobile.png 550w, assets/images/dope-mobile.png 740w" sizes="300px" src="assets/images/dope.png" alt="Dope Comedy">
+                    </a>
+                </div>
+                <h2 id="weekly-shows" class="block__title">Weekly Shows</h2>
+                <p class="block__txt">These shows happen every week, rain or shine. The best date night in the Annex. Catch these shows every week, unless it’s a MAJOR holiday.</p>
+                <div class="block__shows">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/thursday-laugh-therapy-tickets-317216221257?aff=Site" target="_blank">
+                        <img class="block__show-img" srcset="assets/images/thursday-mobile.png 550w, assets/images/thursday.png 740w" sizes="300px" src="assets/images/thursday-mobile.png" alt="Thursty Thursday Comedy">
+                    </a>
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/fckin-funny-fridays-tickets-230082692527?aff=Site" target="_blank">
+                        <img class="block__show-img" srcset="assets/images/friday-mobile.png 550w, assets/images/friday.png 740w" sizes="300px" src="assets/images/friday-mobile.png" alt="Broken Record Comedy, Friday">
+                    </a>
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/saturday-night-satire-tickets-273881265237?aff=Site" target="_blank">
+                        <img class="block__show-img" srcset="assets/images/saturday-mobile.png 550w, assets/images/saturday.png 740w" sizes="300px" src="assets/images/saturday-mobile.png" alt="Lost in the Sauce Comedy, Saturday">
+                    </a>
+                </div>
+                <h2 id="open-mics" class="block__title">Open Mics</h2>
+                <p class="block__txt">Want to test your skills or watch comics hone theirs? These are the shows for you!</p>
+                <div class="block__shows block__shows--two">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/thursday-night-mics-tickets-311306134027?aff=ebdsoporgprofile" target="_blank">
+                        <img class="block__show-img" srcset="assets/images/thur-mic-mobile.png 550w, assets/images/thur-mic.png 740w" sizes="300px" src="assets/images/thur-mic-mobile.png" alt="Thursday Open Mic">
+                    </a>
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/friday-night-mics-tickets-271346022257?aff=ebdsoporgprofile" target="_blank">
+                        <img class="block__show-img" srcset="assets/images/fri-mic-mobile.png 550w, assets/images/fri-mic.png 740w" sizes="300px" src="assets/images/fri-mic-mobile.png" alt="Friday Open Mic">
+                    </a>
+                </div>
+                <p class="block__sub-title block__sub-title--hlt">Are you a comic and want to perform with us? Fill out this form and if you’re good we’ll be in touch!</p>
+                <a class="block__btn block__btn--clear block__btn--padded" href="https://docs.google.com/forms/d/e/1FAIpQLSd5J5SbKdFbzXbxspB2AC1iYqagCPmb0pFELQq1CcjW_Cq32g/viewform?usp=sf_link" target="_blank">Sign-Up Form</a>
+                <img class="block__mic-img" src="assets/images/mic.svg" alt="Mic">
+            </section>
+
+            <section class="block block--dark">
+                <div class="block__content">
+                    <h2 class="block__title">Our Blog</h2>
+                    <p class="block__txt">Want to know more about the Comedy Lab and the Toronto scene as a whole? We’ve got you covered. A couple members of our team used to be a copywriters so they put out comedy related articles every week or so (we try to be consistent but life happens). Head on over to read what we’ve got to say.</p>
+                </div>
+                <a class="block__btn block__btn--clear-dk" href="#">Comedy Lab Blog</a>
+            </section>
+            
+            <img class="graffiti" srcset="assets/images/graffiti-mobile.png 518w, assets/images/graffiti.png 1176w" sizes="(max-width: 350px) 80vw, (max-width: 400px) 75vw, (max-width: 485px) 65vw, (max-width: 600px) 55vw, (max-width: 1023px) 45vw, (max-width: 1900px) 550px, (min-width: 1901px) 700px" src="assets/images/graffiti-mobile.png" alt="Comedy Lab Graffiti">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container root-section">
+            <div class="footer__content">
+                <div class="footer__contact">
+                    <h3 class="footer__title">Contact Us:</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="tel:+16474474830">
+                                <i class="bi bi-telephone-fill footer__icon"></i>
+                                <span>647-447-4830</span>
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <i class="bi bi-envelope-fill footer__icon"></i>
+                            <span>comedylab@gmail.com</span>
+                        </li>
+                        <li class="footer__list-item">
+                            <span><i class="bi bi-geo-alt-fill footer__icon"></i>The Lab416<br>298 Brunswick Ave, Toronto</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h3 class="footer__title">Social Media:</h3>
+                    <ul class="footer__social-links">
+                        <li><a class="footer__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank">
+                            <img class="boxed-icon" src="assets/icons/instagram.svg" alt="Instagram">
+                        </a></li>
+                        <li><a class="footer__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank">
+                            <img class="boxed-icon" src="assets/icons/youtube.svg" alt="YouTube">
+                        </a></li>
+                        <li><a class="footer__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank">
+                            <img class="boxed-icon" src="assets/icons/facebook.svg" alt="Facebook">
+                        </a></li>
+                        <li><a class="footer__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">
+                            <img class="boxed-icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
+                        </a></li>
+                    </ul>
+                </div>
+
+                <img class="footer__logo" src="assets/images/footer-logo.svg" width="150" alt="Logo">
+            </div>
+
+            <div class="footer__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.16258982973!2d-79.41013572405562!3d43.665588251629906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34941ef4c6e1%3A0xbb29d4692292b41a!2sThe%20Lab416%20(Labyrinth%20Lounge)!5e0!3m2!1sen!2sca!4v1690076226721!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p class="copyright__text">&#169; Comedy Lab 2023</p>
+        <p class="copyright__text">All images and content may not be used <br> without permission</p>           
     </div>
     
     <script src="scripts/index.js"></script>

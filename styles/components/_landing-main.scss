@@ -72,7 +72,7 @@
 }
 
 .block__show-img {
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1; //to make it work it had to be added to both image and container
     min-width: 100%;
     max-width: 100%;
     object-fit: cover;
