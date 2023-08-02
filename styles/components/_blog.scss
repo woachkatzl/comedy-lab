@@ -1,0 +1,74 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/fonts' as f;
+@use '../abstracts/mixins' as *;
+
+.main-container--static {
+    top: 0;
+}
+
+.blog-container {
+    display: grid;
+    gap: 50px;
+    width: 90%;
+    color: c.$txt-color-lt;
+}
+
+// BLOCK STYLES
+
+.block--article {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+// TEXT STYLES
+
+.page-title {
+    margin: 45px 0 0;
+    @include page-title-mbl;
+}
+
+//TABLET WIDTH STYLES
+
+@media (min-width: 768px) {
+
+    .blog-container {
+        width: 87%;
+        gap: 70px;
+    }
+
+    // TEXT STYLES
+
+    .page-title {
+        margin: 50px 0 0;
+        @include page-title-dsk;
+    }
+}
+
+// DESKTOP WIDTH STYLES
+@media (min-width: 1024px) {
+
+    .blog-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+    }
+
+    .sticky-container--low {
+        top: 230px;
+        height: 70%;
+    }
+
+    section.block--article:nth-last-of-type(2) {
+        padding-bottom: 120px; // The last but one block on the blog page will mmatch the padding-bottom of the last block for the desktop width, to account for the graffiti sticker
+    }
+
+    .block__content--grow {
+        flex-grow: 1;
+    }
+
+    // TEXT STYLES
+
+    .page-title {
+        grid-column: span 2;
+    }
+}

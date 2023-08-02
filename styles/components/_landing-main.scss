@@ -38,9 +38,12 @@
 }
 
 .block--dark {
-    padding-bottom: 120px;
     color: c.$txt-color-lt;
     border: 2px solid c.$hlt-second;
+}
+
+section.block:last-of-type {
+    padding-bottom: 120px; // The last block (blog) will always have a bigger padding-bottom to account for the graffiti sticker
 }
 
 .block--centered {
@@ -94,6 +97,7 @@
 // BUTTON STYLES
 
 .block__btn {
+    z-index: 1; // to not get overlapped by graffiti sticker at the bottom
     @include flex-center;
     width: 200px;
     height: 56px;
@@ -179,7 +183,7 @@
     // BLOCK STYLES
     .block {
         width: 87%;
-        padding: 70px 8%;
+        padding: 70px 8% 80px;
     }
 
     // SHOW STYLES
@@ -212,7 +216,7 @@
     }
 
     .block__btn--padded {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .block__btn--clear-dk {

@@ -32,7 +32,7 @@ ul {
 .header__container {
   position: relative;
   display: grid;
-  grid-template: 83px 398px/50% 50%;
+  grid-template: 83px 395px/50% 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -313,9 +313,12 @@ ul {
 }
 
 .block--dark {
-  padding-bottom: 120px;
   color: #FFFFFF;
   border: 2px solid #08C0C6;
+}
+
+section.block:last-of-type {
+  padding-bottom: 120px;
 }
 
 .block--centered {
@@ -373,6 +376,7 @@ ul {
 }
 
 .block__btn {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,7 +495,7 @@ ul {
   }
   .block {
     width: 87%;
-    padding: 70px 8%;
+    padding: 70px 8% 80px;
   }
   .block__shows {
     -webkit-box-orient: horizontal;
@@ -523,7 +527,7 @@ ul {
     margin-top: 80px;
   }
   .block__btn--padded {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .block__btn--clear-dk {
     margin-right: 0;
@@ -936,5 +940,73 @@ ul {
     line-height: 1.5rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
+  }
+}
+.main-container--static {
+  top: 0;
+}
+
+.blog-container {
+  display: grid;
+  gap: 50px;
+  width: 90%;
+  color: #FFFFFF;
+}
+
+.block--article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+}
+
+.page-title {
+  margin: 45px 0 0;
+  font-family: "Lobster", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .blog-container {
+    width: 87%;
+    gap: 70px;
+  }
+  .page-title {
+    margin: 50px 0 0;
+    font-family: "Lobster", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 5rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+@media (min-width: 1024px) {
+  .blog-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+  .sticky-container--low {
+    top: 230px;
+    height: 70%;
+  }
+  section.block--article:nth-last-of-type(2) {
+    padding-bottom: 120px;
+  }
+  .block__content--grow {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .page-title {
+    grid-column: span 2;
   }
 }/*# sourceMappingURL=style.css.map */

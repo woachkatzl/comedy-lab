@@ -23,6 +23,25 @@
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+// PAGE TITLE TEXT
+@mixin page-title-mbl {
+    font-family: f.$title-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin page-title-dsk {
+    font-family: f.$title-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 5rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 //MAIN TEXT
 @mixin main-txt-mbl {
     font-family: f.$main-txt;
