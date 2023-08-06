@@ -23,6 +23,11 @@ ul {
     @include clear-mp;
 }
 
+//Main container for every page
+.main {
+    background-color: c.$bg-main-dk; //Background color should extend to side of the max-width of the content
+}
+
 .boxed-icon {
     width: 100%;
 }

@@ -21,6 +21,10 @@ ul {
   padding: 0;
 }
 
+.main {
+  background-color: #27003E;
+}
+
 .boxed-icon {
   width: 100%;
 }
@@ -272,10 +276,6 @@ ul {
     width: 100%;
   }
 }
-.landing-main {
-  background-color: #27003E;
-}
-
 .landing-container,
 .landing-intro {
   display: -webkit-box;
@@ -369,10 +369,13 @@ section.block:last-of-type {
 
 .graffiti {
   position: absolute;
-  left: 10px;
-  bottom: -85px;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
+}
+
+.graffiti--landing {
+  left: 10px;
+  bottom: -85px;
 }
 
 .block__btn {
@@ -732,7 +735,7 @@ section.block:last-of-type {
     width: 38%;
     max-width: 560px;
   }
-  .graffiti {
+  .graffiti--landing {
     left: 20px;
     bottom: -170px;
   }
@@ -742,7 +745,7 @@ section.block:last-of-type {
   }
 }
 @media (min-width: 1901px) {
-  .graffiti {
+  .graffiti--landing {
     bottom: -200px;
   }
 }
@@ -942,10 +945,32 @@ section.block:last-of-type {
     color: rgba(255, 255, 255, 0.7);
   }
 }
-.main-container--static {
-  top: 0;
+.page-main-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 80px;
 }
 
+@media (min-width: 768px) {
+  .page-main-container {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-main-container {
+    top: -230px;
+    padding-bottom: 0;
+  }
+}
 .blog-container {
   display: grid;
   gap: 50px;
@@ -962,6 +987,11 @@ section.block:last-of-type {
       -ms-flex-direction: column;
           flex-direction: column;
   width: auto;
+}
+
+.graffiti--blog {
+  left: 10px;
+  bottom: -85px;
 }
 
 .page-title {
@@ -1006,7 +1036,16 @@ section.block:last-of-type {
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
+  .graffiti--blog {
+    left: 20px;
+    bottom: -330px;
+  }
   .page-title {
     grid-column: span 2;
+  }
+}
+@media (min-width: 1901px) {
+  .graffiti--blog {
+    bottom: -410px;
   }
 }/*# sourceMappingURL=style.css.map */

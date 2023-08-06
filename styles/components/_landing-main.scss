@@ -3,11 +3,6 @@
 @use '../abstracts/mixins' as *;
 
 
-//Background color should extend to side of the max-width of the content
-.landing-main {
-    background-color: c.$bg-main-dk;
-}
-
 .landing-container,
 .landing-intro {
     @include flex-center-vert;
@@ -89,9 +84,12 @@ section.block:last-of-type {
 
 .graffiti {
     position: absolute;
+    transform: rotate(-5deg);
+}
+
+.graffiti--landing {
     left: 10px;
     bottom: -85px;
-    transform: rotate(-5deg);
 }
 
 // BUTTON STYLES
@@ -412,7 +410,7 @@ section.block:last-of-type {
         max-width: 560px;
     }
 
-    .graffiti {
+    .graffiti--landing {
         left: 20px;
         bottom: -170px;
     }
@@ -431,7 +429,7 @@ section.block:last-of-type {
 
     // GRAFFITI
 
-    .graffiti {
+    .graffiti--landing {
         bottom: -200px;
     }
 }

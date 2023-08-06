@@ -2,9 +2,6 @@
 @use '../abstracts/fonts' as f;
 @use '../abstracts/mixins' as *;
 
-.main-container--static {
-    top: 0;
-}
 
 .blog-container {
     display: grid;
@@ -19,6 +16,13 @@
     display: flex;
     flex-direction: column;
     width: auto;
+}
+
+//IMAGES
+
+.graffiti--blog {
+    left: 10px;
+    bottom: -85px;
 }
 
 // TEXT STYLES
@@ -66,9 +70,27 @@
         flex-grow: 1;
     }
 
+    //IMAGES 
+
+    .graffiti--blog {
+        left: 20px;
+        bottom: -330px;
+    }
+
     // TEXT STYLES
 
     .page-title {
         grid-column: span 2;
+    }
+}
+
+// WIDE SCREEN STYLES
+
+@media (min-width: 1901px) {
+
+    //IMAGES 
+
+    .graffiti--blog {
+        bottom: -410px;
     }
 }

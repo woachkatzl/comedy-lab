@@ -1,0 +1,31 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/fonts' as f;
+@use '../abstracts/mixins' as *;
+
+
+.page-main-container {
+    position: relative;
+    @include flex-center-vert;
+    padding-bottom: 80px;
+}
+
+// TABLET WIDTH STYLES
+@media (min-width: 768px) {
+
+    .page-main-container {
+        padding-bottom: 100px;
+    }
+}
+
+// DESKTOP WIDTH STYLES
+@media (min-width: 1024px) {
+
+    .page-main-container {
+        top: -230px;
+        padding-bottom: 0;
+    }
+}
+
+// WIDE SCREEN STYLES
+
+@media (min-width: 1901px) {}
