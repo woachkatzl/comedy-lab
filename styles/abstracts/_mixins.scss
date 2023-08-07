@@ -2,9 +2,8 @@
 @use 'fonts' as f;
 
 // TEXT 
-// MOBILE STYLES
 
-//TITLE TEXT
+//BLOCK SECTION TITLE TEXT
 @mixin section-title-mbl {
     font-family: f.$title-txt;
     font-style: normal;
@@ -23,7 +22,26 @@
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-// PAGE TITLE TEXT
+//ARTICLE BLOC TITLE TEXT (article blocks on the Blog page)
+@mixin article-block-title-mbl {
+    font-family: f.$title-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin article-block-title-dsk {
+    font-family: f.$title-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+// PAGE TITLE TEXT (for secondary pages)
 @mixin page-title-mbl {
     font-family: f.$title-txt;
     font-style: normal;
@@ -159,6 +177,88 @@
     color: c.$txt-color-fade;
 }
 
+//ARTICLE PAGE TEXT STYLES (for pages with articles)
+//Article text hierarchy: Article title --> Artile subtitle --> Article section heading --> Article subsection heading
+
+//ARTICLE TITLE TEXT 
+@mixin article-title-mbl {
+    font-family: f.$title-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin article-title-dsk {
+    font-family: f.$title-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+//ARTICLE SUB-TITLE TEXT 
+@mixin article-subtitle-mbl {
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+@mixin article-subtitle-dsk {
+    //(also works for article section headings for desktop)
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+//ARTICLE SECTION HEADING
+@mixin article-section-mbl {
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+}
+
+//ARTICLE SUB-SECTION HEADING
+@mixin article-subsection-mbl {
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+@mixin article-subsection-dsk {
+    font-family: f.$hlt-txt;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.625rem;
+    line-height: 2rem;
+}
+
+//ARTICLE AUTHOR
+@mixin article-author-txt-mbl {
+    font-family: f.$main-txt;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+}
+
+@mixin article-author-txt-dsk {
+    font-family: f.$main-txt;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
 
 //UTILITIES
 

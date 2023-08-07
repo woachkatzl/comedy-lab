@@ -1,3 +1,4 @@
+//COMMON STYLES FOR SECONDARY PAGES
 @use '../abstracts/colors' as c;
 @use '../abstracts/fonts' as f;
 @use '../abstracts/mixins' as *;
@@ -9,11 +10,25 @@
     padding-bottom: 80px;
 }
 
+// TEXT STYLES
+
+.page-title {
+    margin: 45px 0 0;
+    @include page-title-mbl;
+}
+
 // TABLET WIDTH STYLES
 @media (min-width: 768px) {
 
     .page-main-container {
         padding-bottom: 100px;
+    }
+
+    // TEXT STYLES
+
+    .page-title {
+        margin: 50px 0 0;
+        @include page-title-dsk;
     }
 }
 
@@ -25,7 +40,3 @@
         padding-bottom: 0;
     }
 }
-
-// WIDE SCREEN STYLES
-
-@media (min-width: 1901px) {}

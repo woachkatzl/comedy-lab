@@ -159,16 +159,6 @@ section.block:last-of-type {
     @include main-txt-mbl;
 }
 
-//TEXT HIGHLIGHT
-::selection {
-    color: c.$txt-color-lt;
-    background-color: c.$bg-main-dk;
-}
-
-.block--dark *::selection {
-    background-color: c.$hlt-second;
-}
-
 //TABLET WIDTH STYLES
 
 @media (min-width: 768px) {

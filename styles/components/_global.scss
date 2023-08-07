@@ -31,3 +31,22 @@ ul {
 .boxed-icon {
     width: 100%;
 }
+
+//TEXT STYLING FOR HIGHLIGHTING
+.txt-bold {
+    font-weight: 600;
+}
+
+.txt-underline {
+    text-decoration: underline;
+}
+
+//TEXT SELECTION
+::selection {
+    color: c.$txt-color-lt;
+    background-color: c.$bg-main-dk;
+}
+
+.block--dark *::selection {
+    background-color: c.$hlt-second;
+}
