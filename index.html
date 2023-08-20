@@ -16,16 +16,18 @@
 <body>
     <header class="header">
         <div class="header__container root-section">
-            <a class="header__home" href="index.html">
-                <img class="header__logo" src="assets/images/logo.svg" alt="Logo">
+
+            <a class="header__home" href="index.html" aria-label="Homepage">
+                <img class="header__logo" src="assets/images/logo.svg" fetchpriority="high" loading="eager" alt="Logo">
             </a>
+            
             <div id="header-menu" class="header__menu">
-                <div id="header-menu-btn" class="header__menu-btn">
+                <div id="header-menu-btn" class="header__menu-btn" role="button" aria-haspopup="menu" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle main menu">
                     <div id="bar1" class="header__menu-bar"></div>
                     <div id="bar2" class="header__menu-bar"></div>
                     <div id="bar3" class="header__menu-bar"></div>
                 </div>
-                <nav id="header-nav" class="header__nav">
+                <nav id="header-nav" class="header__nav" aria-label="Site navigation menu">
                     <ul class="header__nav-list">
                         <li><a class="header__nav-link" href="index.html">Home</a></li>
                         <li><a class="header__nav-link" href="#about">About us</a></li>
@@ -39,20 +41,20 @@
             </div>
             <div id="header-menu-bg" class="header__menu-bg"></div>
 
-            <img class="header__banner" srcset="assets/images/banner-mobile.png 1668w, assets/images/banner.png 2386w" sizes="(min-width: 1901px) 1900px,(min-width: 768px) 100vw, 830px" src="assets/images/banner-mobile.png" alt="Comedy Lab Toronto">
+            <img class="header__banner" srcset="assets/images/banner-mobile.png 1668w, assets/images/banner.png 2386w" sizes="(min-width: 1901px) 1900px,(min-width: 768px) 100vw, 830px" src="assets/images/banner-mobile.png" fetchpriority="high" loading="eager" alt="Comedy Lab Toronto">
 
             <ul class="header__social">
-                <li><a class="header__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank">
-                    <img class="boxed-icon" src="assets/icons/instagram.svg" alt="Instagram">
+                <li><a class="header__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank" aria-label="Instagram">
+                    <img class="boxed-icon" src="assets/icons/instagram.svg" fetchpriority="high" loading="eager" alt="Instagram">
                 </a></li>
-                <li><a class="header__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank">
-                    <img class="boxed-icon" src="assets/icons/youtube.svg" alt="YouTube">
+                <li><a class="header__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank" aria-label="YouTube">
+                    <img class="boxed-icon" src="assets/icons/youtube.svg" fetchpriority="high" loading="eager" alt="YouTube">
                 </a></li>
-                <li><a class="header__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank">
-                    <img class="boxed-icon" src="assets/icons/facebook.svg" alt="Facebook">
+                <li><a class="header__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank"  aria-label="Facebook">
+                    <img class="boxed-icon" src="assets/icons/facebook.svg" fetchpriority="high" loading="eager" alt="Facebook">
                 </a></li>
-                <li><a class="header__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">
-                    <img class="boxed-icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
+                <li><a class="header__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank"  aria-label="Eventbrite">
+                    <img class="boxed-icon" src="assets/icons/eventbrite.svg" fetchpriority="high" loading="eager" alt="Eventbrite">
                 </a></li>
             </ul>
         </div>
@@ -63,26 +65,26 @@
             <aside class="sticky-container">
                 <div class="sticky-social">
                     
-                    <div class="sticky-social__btn">
-                        <img class="sticky-social__img" src="assets/icons/share-icon.svg" alt="Share icon">
-                        <img class="sticky-social__text" src="assets/icons/share.svg" alt="Share">
+                    <div class="sticky-social__btn" role="button" aria-label="Share this page" aria-haspopup="menu" aria-controls="sticky-links sticky-drop" aria-expanded="false">
+                        <img class="sticky-social__img" src="assets/icons/share-icon.svg" loading="lazy" alt="Share icon">
+                        <img class="sticky-social__text" src="assets/icons/share.svg" loading="lazy" alt="Share">
                         <div id="sticky-arrow"></div>
                     </div>
                     
                     <ul id="sticky-links" class="sticky-social__list">
-                        <li><a class="sticky-social__link" id="sticky-facebook-share" href="" target="_blank">
+                        <li><a class="sticky-social__link" id="sticky-facebook-share" href="" target="_blank"  aria-label="Share page on Facebook">
                             <i class="bi bi-facebook"></i>
                         </a></li>
-                        <li><a class="sticky-social__link" id="sticky-whatsapp-share" href="" target="_blank">
+                        <li><a class="sticky-social__link" id="sticky-whatsapp-share" href="" target="_blank" aria-label="Share page on Whatsapp">
                             <i class="bi bi-whatsapp"></i>
                         </a></li>
-                        <li><a class="sticky-social__link" id="sticky-twitter-share" href="" target="_blank">
+                        <li><a class="sticky-social__link" id="sticky-twitter-share" href="" target="_blank" aria-label="Share page on Twitter">
                             <i class="bi bi-twitter"></i>
                         </a></li>
-                        <li><a class="sticky-social__link" id="sticky-reddit-share" href="" target="_blank">
+                        <li><a class="sticky-social__link" id="sticky-reddit-share" href="" target="_blank" aria-label="Share page on Reddit">
                             <i class="bi bi-reddit"></i>
                         </a></li>
-                        <li><a class="sticky-social__link" id="sticky-email-share" href="" target="_blank">
+                        <li><a class="sticky-social__link" id="sticky-email-share" href="" target="_blank" aria-label="Share page via email">
                             <i class="bi bi-envelope-at"></i>
                         </a></li>
                     </ul>
@@ -103,18 +105,18 @@
                 <section class="block block--light block--centered block--narrow">
                     <h2 class="block__title">Show Times</h2>
                     <h3 class="block__sub-title">Thursdays</h3>
-                    <p class="block__txt block__time">Pro/Am <time datetime="20:00-4:00">8:00-9:30</time> & Mic <time datetime="22:00-4:00">10:00-12:30</time></p>
+                    <p class="block__txt block__time">Pro/Am <time datetime="20:00">8:00-9:30</time> & Mic <time datetime="22:00">10:00-12:30</time></p>
                     <h3 class="block__sub-title">Fridays</h3>
-                    <p class="block__txt block__time">Pro <time datetime="20:00-4:00">8:00-9:30</time> & Mic <time datetime="22:00-4:00">10:00-1:30</time></p>
+                    <p class="block__txt block__time">Pro <time datetime="20:00">8:00-9:30</time> & Mic <time datetime="22:00">10:00-1:30</time></p>
                     <h3 class="block__sub-title">Saturdays</h3>
-                    <p class="block__txt block__time">Pro <time datetime="20:00-4:00">8:00-9:30</time> & <time datetime="22:00-4:00">10:00-11:45</time></p>
+                    <p class="block__txt block__time">Pro <time datetime="20:00">8:00-9:30</time> & <time datetime="22:00">10:00-11:45</time></p>
                     <a class="block__btn block__btn--hlt" href=" https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">Get Tickets!</a>
                 </section>
 
             </div>
 
             <section class="block block--light">
-                <img class="block__menu-img" src="assets/images/menu.png" alt="The Lab burger and fries">
+                <img class="block__menu-img" src="assets/images/menu.png" loading="lazy" alt="The Lab burger and fries">
                 <h2 class="block__title">Menu</h2>
                 <p class="block__txt">We do have food! Well, the bar upstairs does. Here’s the menu. Yep, you can eat and even order food during the show.</p>
                 <p class="block__txt">Pro Tip: Add an egg to your burger <br> *Ask nicely & tip well.</p>
@@ -126,45 +128,45 @@
                 <h2 id="monthly-shows" class="block__title">Monthly Shows</h2>
                 <p class="block__txt">A collection of featured monthly shows produced by our parent company Werd Entertainment. These are the hottest shows in the GTA. Note some monthly shows take place at other venues.</p>
                 <div class="block__shows">
-                    <a class="block__show-link" href="https://www.eventbrite.ca/e/heat-wave-comedy-tickets-569796104487?aff=ebdsoporgprofile" target="_blank">
-                        <img class="block__show-img" srcset="assets/images/heatwave-mobile.png 550w, assets/images/heatwave.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/heatwave-mobile.png" alt="Heat Wave Comedy">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/heat-wave-comedy-tickets-569796104487?aff=ebdsoporgprofile" target="_blank" aria-label="Heatwave show and tickets">
+                        <img class="block__show-img" srcset="assets/images/heatwave-mobile.png 550w, assets/images/heatwave.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/heatwave-mobile.png" loading="lazy" alt="Heat Wave Comedy">
                     </a>
-                    <a class="block__show-link" href="https://www.universe.com/users/tokin-comedy-810ZTY" target="_blank">
-                        <img class="block__show-img" srcset="assets/images/tokin-mobile.png 550w, assets/images/tokin.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/tokin-mobile.png" alt="Tokin' Comedy">
+                    <a class="block__show-link" href="https://www.universe.com/users/tokin-comedy-810ZTY" target="_blank" aria-label="Tokin 420 show and tickets">
+                        <img class="block__show-img" srcset="assets/images/tokin-mobile.png 550w, assets/images/tokin.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/tokin-mobile.png" loading="lazy" alt="Tokin' Comedy">
                     </a>
-                    <a class="block__show-link" href="https://www.eventbrite.ca/cc/dope-comedy-broken-cage-gallery-1060609" target="_blank">
-                        <img class="block__show-img" srcset="assets/images/dope-mobile.png 550w, assets/images/dope-mobile.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/dope.png" alt="Dope Comedy">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/cc/dope-comedy-broken-cage-gallery-1060609" target="_blank" aria-label="Dope show and tickets">
+                        <img class="block__show-img" srcset="assets/images/dope-mobile.png 550w, assets/images/dope-mobile.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/dope.png" loading="lazy" alt="Dope Comedy">
                     </a>
                 </div>
 
                 <h2 id="weekly-shows" class="block__title">Weekly Shows</h2>
                 <p class="block__txt">These shows happen every week, rain or shine. The best date night in the Annex. Catch these shows every week, unless it’s a MAJOR holiday.</p>
                 <div class="block__shows">
-                    <a class="block__show-link" href="https://www.eventbrite.ca/e/thursday-laugh-therapy-tickets-317216221257?aff=Site" target="_blank">
-                        <img class="block__show-img" srcset="assets/images/thursday-mobile.png 550w, assets/images/thursday.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/thursday-mobile.png" alt="Thursty Thursday Comedy">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/thursday-laugh-therapy-tickets-317216221257?aff=Site" target="_blank" aria-label="Thursday weekly show and tickets">
+                        <img class="block__show-img" srcset="assets/images/thursday-mobile.png 550w, assets/images/thursday.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/thursday-mobile.png" loading="lazy" alt="Thursty Thursday Comedy">
                     </a>
-                    <a class="block__show-link" href="https://www.eventbrite.ca/e/fckin-funny-fridays-tickets-230082692527?aff=Site" target="_blank">
-                        <img class="block__show-img" srcset="assets/images/friday-mobile.png 550w, assets/images/friday.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/friday-mobile.png" alt="Broken Record Comedy, Friday">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/fckin-funny-fridays-tickets-230082692527?aff=Site" target="_blank" aria-label="Friday weekly show and tickets">
+                        <img class="block__show-img" srcset="assets/images/friday-mobile.png 550w, assets/images/friday.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/friday-mobile.png" loading="lazy" alt="Broken Record Comedy, Friday">
                     </a>
-                    <a class="block__show-link" href="https://www.eventbrite.ca/e/saturday-night-satire-tickets-273881265237?aff=Site" target="_blank">
-                        <img class="block__show-img" srcset="assets/images/saturday-mobile.png 550w, assets/images/saturday.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/saturday-mobile.png" alt="Lost in the Sauce Comedy, Saturday">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/saturday-night-satire-tickets-273881265237?aff=Site" target="_blank" aria-label="Saturday weekly show and tickets">
+                        <img class="block__show-img" srcset="assets/images/saturday-mobile.png 550w, assets/images/saturday.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/saturday-mobile.png" loading="lazy" alt="Lost in the Sauce Comedy, Saturday">
                     </a>
                 </div>
 
                 <h2 id="open-mics" class="block__title">Open Mics</h2>
                 <p class="block__txt">Want to test your skills or watch comics hone theirs? These are the shows for you!</p>
                 <div class="block__shows block__shows--two">
-                    <a class="block__show-link" href="https://www.eventbrite.ca/e/thursday-night-mics-tickets-311306134027?aff=ebdsoporgprofile" target="_blank">
-                        <img class="block__show-img" srcset="assets/images/thur-mic-mobile.png 550w, assets/images/thur-mic.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/thur-mic-mobile.png" alt="Thursday Open Mic">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/thursday-night-mics-tickets-311306134027?aff=ebdsoporgprofile" target="_blank" aria-label="Thursday open mic">
+                        <img class="block__show-img" srcset="assets/images/thur-mic-mobile.png 550w, assets/images/thur-mic.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/thur-mic-mobile.png" loading="lazy" alt="Thursday Open Mic">
                     </a>
-                    <a class="block__show-link" href="https://www.eventbrite.ca/e/friday-night-mics-tickets-271346022257?aff=ebdsoporgprofile" target="_blank">
-                        <img class="block__show-img" srcset="assets/images/fri-mic-mobile.png 550w, assets/images/fri-mic.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/fri-mic-mobile.png" alt="Friday Open Mic">
+                    <a class="block__show-link" href="https://www.eventbrite.ca/e/friday-night-mics-tickets-271346022257?aff=ebdsoporgprofile" target="_blank" aria-label="Friday open mic">
+                        <img class="block__show-img" srcset="assets/images/fri-mic-mobile.png 550w, assets/images/fri-mic.png 740w" sizes="(max-width: 767px) 70vw, (max-width: 1900px) 21vw, (min-width: 1901px) 430px" src="assets/images/fri-mic-mobile.png" loading="lazy" alt="Friday Open Mic">
                     </a>
                 </div>
 
                 <p class="block__sub-title block__sub-title--hlt">Are you a comic and want to perform with us? Fill out this form and if you’re good we’ll be in touch!</p>
                 <a class="block__btn block__btn--clear block__btn--padded" href="https://docs.google.com/forms/d/e/1FAIpQLSd5J5SbKdFbzXbxspB2AC1iYqagCPmb0pFELQq1CcjW_Cq32g/viewform?usp=sf_link" target="_blank">Sign-Up Form</a>
-                <img class="block__mic-img" src="assets/images/mic.svg" alt="Mic">
+                <img class="block__mic-img" src="assets/images/mic.svg" loading="lazy" alt="Mic">
             </section>
 
             <section class="block block--dark">
@@ -175,7 +177,7 @@
                 <a class="block__btn block__btn--clear-dk" href="blog.html">Comedy Lab Blog</a>
             </section>
             
-            <img class="graffiti graffiti--landing" srcset="assets/images/graffiti-mobile.png 518w, assets/images/graffiti.png 1176w" sizes="(max-width: 350px) 80vw, (max-width: 400px) 75vw, (max-width: 485px) 65vw, (max-width: 600px) 55vw, (max-width: 1023px) 45vw, (max-width: 1900px) 550px, (min-width: 1901px) 700px" src="assets/images/graffiti-mobile.png" alt="Comedy Lab Graffiti">
+            <img class="graffiti graffiti--landing" srcset="assets/images/graffiti-mobile.png 518w, assets/images/graffiti.png 1176w" sizes="(max-width: 350px) 80vw, (max-width: 400px) 75vw, (max-width: 485px) 65vw, (max-width: 600px) 55vw, (max-width: 1023px) 45vw, (max-width: 1900px) 550px, (min-width: 1901px) 700px" src="assets/images/graffiti-mobile.png" loading="lazy" alt="Comedy Lab Graffiti">
         </div>
     </main>
 
@@ -184,7 +186,7 @@
             <div class="footer__content">
 
                 <address class="footer__contact">
-                    <h3 class="footer__title">Contact Us:</h3>
+                    <p class="footer__title">Contact Us:</p>
                     <ul class="footer__list">
                         <li class="footer__list-item">
                             <a href="tel:+16474474830">
@@ -203,24 +205,24 @@
                 </address>
 
                 <div class="footer__social">
-                    <h3 class="footer__title">Social Media:</h3>
+                    <p class="footer__title">Social Media:</p>
                     <ul class="footer__social-links">
-                        <li><a class="footer__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank">
-                            <img class="boxed-icon" src="assets/icons/instagram.svg" alt="Instagram">
+                        <li><a class="footer__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank" aria-label="Instagram">
+                            <img class="boxed-icon" src="assets/icons/instagram.svg" loading="lazy" alt="Instagram">
                         </a></li>
-                        <li><a class="footer__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank">
-                            <img class="boxed-icon" src="assets/icons/youtube.svg" alt="YouTube">
+                        <li><a class="footer__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank" aria-label="YoTube">
+                            <img class="boxed-icon" src="assets/icons/youtube.svg" loading="lazy" alt="YouTube">
                         </a></li>
-                        <li><a class="footer__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank">
-                            <img class="boxed-icon" src="assets/icons/facebook.svg" alt="Facebook">
+                        <li><a class="footer__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank" aria-label="Facebook">
+                            <img class="boxed-icon" src="assets/icons/facebook.svg" loading="lazy" alt="Facebook">
                         </a></li>
-                        <li><a class="footer__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">
-                            <img class="boxed-icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
+                        <li><a class="footer__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank" aria-label="Eventbrite">
+                            <img class="boxed-icon" src="assets/icons/eventbrite.svg" loading="lazy" alt="Eventbrite">
                         </a></li>
                     </ul>
                 </div>
 
-                <img class="footer__logo" src="assets/images/footer-logo.svg" width="150" alt="Logo">
+                <img class="footer__logo" src="assets/images/footer-logo.svg" loading="lazy" width="150" alt="Logo">
             </div>
 
             <div class="footer__map">

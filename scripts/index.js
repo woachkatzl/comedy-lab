@@ -36,6 +36,13 @@ const menuOnClick = () => {
     nav.classList.toggle("change");
     menuPop.classList.toggle("change-bg");
     menuUnhover();
+
+    //changing the aria-expanded attrubute value for better accessibility
+    if (menuBtn.getAttribute("aria-expanded") === 'false') {
+        menuBtn.setAttribute("aria-expanded", 'true');
+    } else {
+        menuBtn.setAttribute("aria-expanded", 'false');
+    }
 };
 
 const menuHover = () => {
@@ -69,6 +76,13 @@ const stickyClick = () => {
     stickyLinksContainer.classList.toggle("sticky-social__list");
 
     stickyDrop.classList.toggle("sticky-social__drop");
+
+    //changing the aria-expanded attrubute value for better accessibility
+    if (stickySocialBtn.getAttribute("aria-expanded") === 'false') {
+        stickySocialBtn.setAttribute("aria-expanded", 'true');
+    } else {
+        stickySocialBtn.setAttribute("aria-expanded", 'false');
+    }
 };
 
 // share links function
@@ -85,7 +99,7 @@ const sharePage = () => {
 };
 
 //FUNCTIONS ON PAGE LOAD
-sharePage();
+window.addEventListener("load", sharePage);
 
 // EVENT LISTENERS
 
