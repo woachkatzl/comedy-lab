@@ -352,8 +352,7 @@ section.block:last-of-type {
 }
 
 .block__menu-img,
-.block__mic-img,
-.sticky-container {
+.block__mic-img {
   display: none;
 }
 
@@ -589,6 +588,50 @@ section.block:last-of-type {
             align-items: stretch;
     width: 87%;
   }
+  .block--gradient {
+    position: relative;
+  }
+  .block--narrow {
+    width: 47%;
+  }
+  .block__content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .block__menu-img {
+    display: block;
+    float: right;
+    width: 350px;
+    margin-top: 60px;
+    margin-left: 130px;
+  }
+  .block__mic-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 38%;
+    max-width: 560px;
+  }
+  .graffiti--landing {
+    left: 20px;
+    bottom: -170px;
+  }
+  .block__sub-title--hlt {
+    width: 75%;
+    margin: 110px auto 100px auto;
+  }
+}
+@media (min-width: 1901px) {
+  .graffiti--landing {
+    bottom: -200px;
+  }
+}
+.sticky-container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
   .sticky-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -690,14 +733,16 @@ section.block:last-of-type {
     padding-top: 10px;
   }
   .sticky-social__link {
-    font-size: 2rem;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
   }
   .sticky-social__link:hover {
-    display: inline-block;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -717,44 +762,6 @@ section.block:last-of-type {
     height: 100%;
     -webkit-transition: height 0.3s linear 0s;
     transition: height 0.3s linear 0s;
-  }
-  .block--gradient {
-    position: relative;
-  }
-  .block--narrow {
-    width: 47%;
-  }
-  .block__content {
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
-  .block__menu-img {
-    display: block;
-    float: right;
-    width: 350px;
-    margin-top: 60px;
-    margin-left: 130px;
-  }
-  .block__mic-img {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 38%;
-    max-width: 560px;
-  }
-  .graffiti--landing {
-    left: 20px;
-    bottom: -170px;
-  }
-  .block__sub-title--hlt {
-    width: 75%;
-    margin: 110px auto 100px auto;
-  }
-}
-@media (min-width: 1901px) {
-  .graffiti--landing {
-    bottom: -200px;
   }
 }
 .footer {

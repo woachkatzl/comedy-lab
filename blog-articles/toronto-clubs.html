@@ -16,16 +16,18 @@
 <body>
     <header class="header">
         <div class="header__container root-section">
-            <a class="header__home" href="../index.html">
-                <img class="header__logo" src="../assets/images/logo.svg" alt="Logo">
+
+            <a class="header__home" href="../index.html" aria-label="Homepage">
+                <img class="header__logo" src="../assets/images/logo.svg" fetchpriority="high" loading="eager" alt="Logo">
             </a>
+            
             <div id="header-menu" class="header__menu">
-                <div id="header-menu-btn" class="header__menu-btn">
+                <div id="header-menu-btn" class="header__menu-btn" role="button" aria-haspopup="menu" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle main menu">
                     <div id="bar1" class="header__menu-bar"></div>
                     <div id="bar2" class="header__menu-bar"></div>
                     <div id="bar3" class="header__menu-bar"></div>
                 </div>
-                <nav id="header-nav" class="header__nav">
+                <nav id="header-nav" class="header__nav" aria-label="Site navigation menu">
                     <ul class="header__nav-list">
                         <li><a class="header__nav-link" href="../index.html">Home</a></li>
                         <li><a class="header__nav-link" href="../index.html#about">About us</a></li>
@@ -39,20 +41,20 @@
             </div>
             <div id="header-menu-bg" class="header__menu-bg"></div>
 
-            <img class="header__banner" srcset="../assets/images/banner-mobile.png 1668w, ../assets/images/banner.png 2386w" sizes="(min-width: 1901px) 1900px,(min-width: 768px) 100vw, 830px" src="../assets/images/banner-mobile.png" alt="Comedy Lab Toronto">
+            <img class="header__banner" srcset="../assets/images/banner-mobile.png 1668w, ../assets/images/banner.png 2386w" sizes="(min-width: 1901px) 1900px,(min-width: 768px) 100vw, 830px" src="../assets/images/banner-mobile.png" fetchpriority="high" loading="eager" alt="Comedy Lab Toronto">
 
             <ul class="header__social">
-                <li><a class="header__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank">
-                    <img class="boxed-icon" src="../assets/icons/instagram.svg" alt="Instagram">
+                <li><a class="header__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank" aria-label="Instagram">
+                    <img class="boxed-icon" src="../assets/icons/instagram.svg" fetchpriority="high" loading="eager" alt="Instagram">
                 </a></li>
-                <li><a class="header__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank">
-                    <img class="boxed-icon" src="../assets/icons/youtube.svg" alt="YouTube">
+                <li><a class="header__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank" aria-label="YouTube">
+                    <img class="boxed-icon" src="../assets/icons/youtube.svg" fetchpriority="high" loading="eager" alt="YouTube">
                 </a></li>
-                <li><a class="header__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank">
-                    <img class="boxed-icon" src="../assets/icons/facebook.svg" alt="Facebook">
+                <li><a class="header__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank"  aria-label="Facebook">
+                    <img class="boxed-icon" src="../assets/icons/facebook.svg" fetchpriority="high" loading="eager" alt="Facebook">
                 </a></li>
-                <li><a class="header__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">
-                    <img class="boxed-icon" src="../assets/icons/eventbrite.svg" alt="Eventbrite">
+                <li><a class="header__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank"  aria-label="Eventbrite">
+                    <img class="boxed-icon" src="../assets/icons/eventbrite.svg" fetchpriority="high" loading="eager" alt="Eventbrite">
                 </a></li>
             </ul>
         </div>
@@ -71,20 +73,20 @@
                     </div>
                     
                     <ul id="sticky-links" class="sticky-social__list">
-                        <li><a class="sticky-social__link" id="sticky-facebook-share" href="" target="_blank">
-                            <i class="bi bi-facebook"></i>
+                        <li><a class="sticky-social__link" id="sticky-facebook-share" href="" target="_blank"  aria-label="Share page on Facebook">
+                            <img class="boxed-icon" src="../assets/icons/facebook-sticky.svg" alt="Facebook">
                         </a></li>
-                        <li><a class="sticky-social__link" id="sticky-whatsapp-share" href="" target="_blank">
-                            <i class="bi bi-whatsapp"></i>
+                        <li><a class="sticky-social__link" id="sticky-whatsapp-share" href="" target="_blank" aria-label="Share page on Whatsapp">
+                            <img class="boxed-icon" src="../assets/icons/whatsapp-sticky.svg" alt="WhatsApp">
                         </a></li>
-                        <li><a class="sticky-social__link" id="sticky-twitter-share" href="" target="_blank">
-                            <i class="bi bi-twitter"></i>
+                        <li><a class="sticky-social__link" id="sticky-twitter-share" href="" target="_blank" aria-label="Share page on Twitter">
+                            <img class="boxed-icon" src="../assets/icons/twitter-sticky.svg" alt="Twitter">
                         </a></li>
-                        <li><a class="sticky-social__link" id="sticky-reddit-share" href="" target="_blank">
-                            <i class="bi bi-reddit"></i>
+                        <li><a class="sticky-social__link" id="sticky-reddit-share" href="" target="_blank" aria-label="Share page on Reddit">
+                            <img class="boxed-icon" src="../assets/icons/reddit-sticky.svg" alt="Reddit">
                         </a></li>
-                        <li><a class="sticky-social__link" id="sticky-email-share" href="" target="_blank">
-                            <i class="bi bi-envelope-at"></i>
+                        <li><a class="sticky-social__link" id="sticky-email-share" href="" target="_blank" aria-label="Share page via email">
+                            <img class="boxed-icon" src="../assets/icons/envelope-sticky.svg" alt="Email">
                         </a></li>
                     </ul>
 
