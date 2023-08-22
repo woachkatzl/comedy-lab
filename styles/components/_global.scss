@@ -2,6 +2,13 @@
 @use '../abstracts/fonts' as f;
 @use '../abstracts/mixins' as *;
 
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .root-section {
     min-width: 265px;
     max-width: 1900px;
