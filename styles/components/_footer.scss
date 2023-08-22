@@ -19,6 +19,12 @@
     text-align: center;
 }
 
+.footer__contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer__social-links {
     display: flex;
     justify-content: space-between;
@@ -84,6 +90,10 @@
         order: 1;
     }
 
+    .footer__contact-box {
+        justify-content: start;
+    }
+
     .footer__title {
         margin-bottom: 35px;
         @include footer-title-dsk;
@@ -98,6 +108,7 @@
     }
 
     .footer__icon {
+        width: 20px;
         margin-right: 15px;
     }
 

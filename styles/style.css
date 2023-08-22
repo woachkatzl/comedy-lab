@@ -788,6 +788,18 @@ section.block:last-of-type {
   text-align: center;
 }
 
+.footer__contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer__social-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,6 +883,11 @@ section.block:last-of-type {
         -ms-flex-order: 1;
             order: 1;
   }
+  .footer__contact-box {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
   .footer__title {
     margin-bottom: 35px;
     font-family: "Source Sans Pro", sans-serif;
@@ -890,6 +907,7 @@ section.block:last-of-type {
     margin-bottom: 20px;
   }
   .footer__icon {
+    width: 20px;
     margin-right: 15px;
   }
   .footer__social-links {
