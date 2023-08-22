@@ -7,9 +7,31 @@
     background-color: c.$bg-main-dk;
 }
 
+.copyright__brand {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.copyright__werd-logo {
+    margin-left: 5px;
+}
+
+.copyright__credit {
+    margin-top: 40px;
+}
+
 .copyright__text {
     @include copy-txt-mbl;
     text-align: center;
+}
+
+.copyright__text--low {
+    margin: 0;
+}
+
+.copyright__link {
+    text-decoration: underline;
 }
 
 .copyright__text::selection {
@@ -22,5 +44,9 @@
 
     .copyright__text {
         @include copy-txt-dsk;
+    }
+
+    .copyright__werd-logo {
+        width: 35px;
     }
 }
