@@ -497,7 +497,7 @@ section.block:last-of-type {
 }
 
 .block__txt {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -565,7 +565,7 @@ section.block:last-of-type {
     line-height: 2.5rem;
   }
   .block__txt {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.25rem;
@@ -1174,7 +1174,7 @@ section.block:last-of-type {
 .article__author {
   margin-left: -8%;
   margin-bottom: 40px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 0.875rem;
@@ -1200,7 +1200,7 @@ section.block:last-of-type {
 
 .article__txt,
 .article__txt--hlt {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -1243,7 +1243,7 @@ section.block:last-of-type {
   .article__author {
     margin-left: -6%;
     margin-bottom: 70px;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Arial, sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 1.25rem;
@@ -1265,7 +1265,7 @@ section.block:last-of-type {
   }
   .article__txt,
   .article__txt--hlt {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.25rem;
