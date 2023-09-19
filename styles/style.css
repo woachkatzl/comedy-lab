@@ -84,10 +84,11 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 68px;
 }
 
 .header__logo {
-  width: 68px;
+  width: 100%;
 }
 
 .header__banner {
@@ -277,10 +278,11 @@ ul {
   .header__home {
     -ms-flex-item-align: end;
         align-self: flex-end;
+    width: 100px;
     margin-left: 14%;
   }
   .header__logo {
-    width: 100px;
+    width: 100%;
   }
   .header__menu {
     margin-right: 14%;
