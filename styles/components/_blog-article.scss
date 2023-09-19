@@ -32,7 +32,7 @@
     @include article-subtitle-mbl;
 }
 
-.article__author {
+.article__meta {
     margin-left: -8%;
     margin-bottom: 40px;
     @include article-author-txt-mbl;
@@ -88,7 +88,7 @@
         @include article-subtitle-dsk;
     }
 
-    .article__author {
+    .article__meta {
         margin-left: -6%;
         margin-bottom: 70px;
         @include article-author-txt-dsk;

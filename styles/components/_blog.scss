@@ -55,11 +55,6 @@
         gap: 100px;
     }
 
-    .sticky-container--low {
-        top: 230px;
-        height: 70%;
-    }
-
     section.block--article:nth-last-of-type(2) {
         padding-bottom: 120px; // The last but one block on the blog page will mmatch the padding-bottom of the last block for the desktop width, to account for the graffiti sticker
     }

@@ -651,6 +651,12 @@ section.block:last-of-type {
     width: 6.5%;
     height: 90%;
   }
+  .sticky-container--low {
+    top: 230px;
+  }
+  .sticky-container--short {
+    height: 65%;
+  }
   .sticky-social {
     position: sticky;
     top: 20%;
@@ -1111,10 +1117,6 @@ section.block:last-of-type {
     grid-template-columns: 1fr 1fr;
     gap: 100px;
   }
-  .sticky-container--low {
-    top: 230px;
-    height: 70%;
-  }
   section.block--article:nth-last-of-type(2) {
     padding-bottom: 120px;
   }
@@ -1171,7 +1173,7 @@ section.block:last-of-type {
   line-height: 1.625rem;
 }
 
-.article__author {
+.article__meta {
   margin-left: -8%;
   margin-bottom: 40px;
   font-family: "Lato", Arial, sans-serif;
@@ -1240,7 +1242,7 @@ section.block:last-of-type {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-  .article__author {
+  .article__meta {
     margin-left: -6%;
     margin-bottom: 70px;
     font-family: "Lato", Arial, sans-serif;

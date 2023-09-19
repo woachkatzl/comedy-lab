@@ -22,6 +22,16 @@
         height: 90%;
     }
 
+    // Lowered container, its top aligned with the page title position. For Blog page and article pages
+    .sticky-container--low {
+        top: 230px;
+    }
+
+    // Shorter container for the Blog page
+    .sticky-container--short {
+        height: 65%;
+    }
+
     .sticky-social {
         position: sticky;
         top: 20%;
