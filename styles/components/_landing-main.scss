@@ -184,6 +184,10 @@ section.block:last-of-type {
         width: 65.4%;
     }
 
+    .block__shows--center {
+        margin: 40px auto 70px auto;
+    }
+
     .block__show-link {
         // maintaining same width with flex-direction row regardless of an image: grow to 1 and basis to 0
         flex: 1 0 0;

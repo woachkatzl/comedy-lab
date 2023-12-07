@@ -1,275 +1,719 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Toronto Comedy Lab blog article presenting an overview of the best local indy comedy venues. Get the info on their location, hours and open mic opportunities. Written by Danton Lamar, published September 2023">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Toronto Comedy Lab blog article presenting an overview of the best local indy comedy venues. Get the info on their location, hours and open mic opportunities. Written by Danton Lamar, published September 2023"
+    />
+    <meta name="version" content="1.1" />
     <title>Toronto Clubs: What to Know & Where to Go - Comedy Lab</title>
-    <link rel="shortcut icon" href="../assets/icons/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../assets/icons/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css?v=1.1" />
     <script src="../scripts/page.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container root-section">
+      <div class="header__container root-section">
+        <a class="header__home" href="/" aria-label="Homepage">
+          <img
+            class="header__logo"
+            src="../assets/images/logo.svg"
+            fetchpriority="high"
+            loading="eager"
+            alt="Logo"
+          />
+        </a>
 
-            <a class="header__home" href="/" aria-label="Homepage">
-                <img class="header__logo" src="../assets/images/logo.svg" fetchpriority="high" loading="eager" alt="Logo">
-            </a>
-            
-            <div id="header-menu" class="header__menu">
-                <div id="header-menu-btn" class="header__menu-btn" role="button" aria-haspopup="menu" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle main menu">
-                    <div id="bar1" class="header__menu-bar"></div>
-                    <div id="bar2" class="header__menu-bar"></div>
-                    <div id="bar3" class="header__menu-bar"></div>
-                </div>
-                <nav id="header-nav" class="header__nav" aria-label="Site navigation menu">
-                    <ul class="header__nav-list">
-                        <li><a class="header__nav-link" href="../index.html">Home</a></li>
-                        <li><a class="header__nav-link" href="../index.html#about">About us</a></li>
-                        <li><a class="header__nav-link" href="../index.html#monthly-shows">Monthly shows</a></li>
-                        <li><a class="header__nav-link" href="../index.html#weekly-shows">Weekly shows</a></li>
-                        <li><a class="header__nav-link" href="../index.html#open-mics">Open mics</a></li>
-                        <li><a class="header__nav-link" href="../blog.html">Blog</a></li>
-                        <li><a class="header__nav-link" href="#footer">Contact us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="header-menu-bg" class="header__menu-bg"></div>
-
-            <img class="header__banner" srcset="../assets/images/banner-mobile.webp 1668w, ../assets/images/banner.webp 2386w" sizes="(min-width: 1901px) 1900px,(min-width: 768px) 100vw, 830px" src="../assets/images/banner-mobile.webp" fetchpriority="high" loading="eager" alt="Comedy Lab Toronto">
-
-            <ul class="header__social">
-                <li><a class="header__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank" aria-label="Instagram">
-                    <img class="boxed-icon" src="../assets/icons/instagram.svg" fetchpriority="high" loading="eager" alt="Instagram">
-                </a></li>
-                <li><a class="header__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank" aria-label="YouTube">
-                    <img class="boxed-icon" src="../assets/icons/youtube.svg" fetchpriority="high" loading="eager" alt="YouTube">
-                </a></li>
-                <li><a class="header__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank"  aria-label="Facebook">
-                    <img class="boxed-icon" src="../assets/icons/facebook.svg" fetchpriority="high" loading="eager" alt="Facebook">
-                </a></li>
-                <li><a class="header__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank"  aria-label="Eventbrite">
-                    <img class="boxed-icon" src="../assets/icons/eventbrite.svg" fetchpriority="high" loading="eager" alt="Eventbrite">
-                </a></li>
+        <div id="header-menu" class="header__menu">
+          <div
+            id="header-menu-btn"
+            class="header__menu-btn"
+            role="button"
+            aria-haspopup="menu"
+            aria-controls="header-nav"
+            aria-expanded="false"
+            aria-label="Toggle main menu"
+          >
+            <div id="bar1" class="header__menu-bar"></div>
+            <div id="bar2" class="header__menu-bar"></div>
+            <div id="bar3" class="header__menu-bar"></div>
+          </div>
+          <nav
+            id="header-nav"
+            class="header__nav"
+            aria-label="Site navigation menu"
+          >
+            <ul class="header__nav-list">
+              <li><a class="header__nav-link" href="../index.html">Home</a></li>
+              <li>
+                <a class="header__nav-link" href="../index.html#about"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a class="header__nav-link" href="../index.html#monthly-shows"
+                  >Monthly shows</a
+                >
+              </li>
+              <li>
+                <a class="header__nav-link" href="../index.html#weekly-shows"
+                  >Weekly shows</a
+                >
+              </li>
+              <li>
+                <a class="header__nav-link" href="../index.html#open-mics"
+                  >Open mics</a
+                >
+              </li>
+              <li><a class="header__nav-link" href="../blog.html">Blog</a></li>
+              <li><a class="header__nav-link" href="#footer">Contact us</a></li>
             </ul>
+          </nav>
         </div>
+        <div id="header-menu-bg" class="header__menu-bg"></div>
+
+        <img
+          class="header__banner"
+          srcset="
+            ../assets/images/banner-mobile.webp 1668w,
+            ../assets/images/banner.webp        2386w
+          "
+          sizes="(min-width: 1901px) 1900px,(min-width: 768px) 100vw, 830px"
+          src="../assets/images/banner-mobile.webp"
+          fetchpriority="high"
+          loading="eager"
+          alt="Comedy Lab Toronto"
+        />
+
+        <ul class="header__social">
+          <li>
+            <a
+              class="header__social-link"
+              href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <img
+                class="boxed-icon"
+                src="../assets/icons/instagram.svg"
+                fetchpriority="high"
+                loading="eager"
+                alt="Instagram"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="header__social-link"
+              href="https://www.youtube.com/@werdentertainment/"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <img
+                class="boxed-icon"
+                src="../assets/icons/youtube.svg"
+                fetchpriority="high"
+                loading="eager"
+                alt="YouTube"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="header__social-link"
+              href="https://www.facebook.com/thecomedylabto"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <img
+                class="boxed-icon"
+                src="../assets/icons/facebook.svg"
+                fetchpriority="high"
+                loading="eager"
+                alt="Facebook"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="header__social-link"
+              href="https://www.eventbrite.ca/o/werd-entertainment-38479180893"
+              target="_blank"
+              aria-label="Eventbrite"
+            >
+              <img
+                class="boxed-icon"
+                src="../assets/icons/eventbrite.svg"
+                fetchpriority="high"
+                loading="eager"
+                alt="Eventbrite"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="main">
-        <div class="page-main-container root-section">
+      <div class="page-main-container root-section">
+        <aside class="sticky-container sticky-container--low">
+          <div class="sticky-social">
+            <div
+              class="sticky-social__btn"
+              role="button"
+              aria-label="Share this page"
+              aria-haspopup="menu"
+              aria-controls="sticky-links sticky-drop"
+              aria-expanded="false"
+            >
+              <img
+                class="sticky-social__img"
+                src="../assets/icons/share-icon.svg"
+                loading="lazy"
+                alt="Share icon"
+              />
+              <img
+                class="sticky-social__text"
+                src="../assets/icons/share.svg"
+                loading="lazy"
+                alt="Share"
+              />
+              <div id="sticky-arrow"></div>
+            </div>
 
-            <aside class="sticky-container sticky-container--low">
-                <div class="sticky-social">
-                    
-                    <div class="sticky-social__btn" role="button" aria-label="Share this page" aria-haspopup="menu" aria-controls="sticky-links sticky-drop" aria-expanded="false">
-                        <img class="sticky-social__img" src="../assets/icons/share-icon.svg" loading="lazy" alt="Share icon">
-                        <img class="sticky-social__text" src="../assets/icons/share.svg" loading="lazy" alt="Share">
-                        <div id="sticky-arrow"></div>
-                    </div>
-                    
-                    <ul id="sticky-links" class="sticky-social__list">
-                        <li><a class="sticky-social__link" id="sticky-facebook-share" href="" target="_blank"  aria-label="Share page on Facebook">
-                            <img class="boxed-icon" src="../assets/icons/facebook-sticky.svg" alt="Facebook">
-                        </a></li>
-                        <li><a class="sticky-social__link" id="sticky-whatsapp-share" href="" target="_blank" aria-label="Share page on Whatsapp">
-                            <img class="boxed-icon" src="../assets/icons/whatsapp-sticky.svg" alt="WhatsApp">
-                        </a></li>
-                        <li><a class="sticky-social__link" id="sticky-twitter-share" href="" target="_blank" aria-label="Share page on Twitter">
-                            <img class="boxed-icon" src="../assets/icons/twitter-sticky.svg" alt="Twitter">
-                        </a></li>
-                        <li><a class="sticky-social__link" id="sticky-reddit-share" href="" target="_blank" aria-label="Share page on Reddit">
-                            <img class="boxed-icon" src="../assets/icons/reddit-sticky.svg" alt="Reddit">
-                        </a></li>
-                        <li><a class="sticky-social__link" id="sticky-email-share" href="" target="_blank" aria-label="Share page via email">
-                            <img class="boxed-icon" src="../assets/icons/envelope-sticky.svg" alt="Email">
-                        </a></li>
-                    </ul>
+            <ul id="sticky-links" class="sticky-social__list">
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-facebook-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page on Facebook"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="../assets/icons/facebook-sticky.svg"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-whatsapp-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page on Whatsapp"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="../assets/icons/whatsapp-sticky.svg"
+                    alt="WhatsApp"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-twitter-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page on Twitter"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="../assets/icons/twitter-sticky.svg"
+                    alt="Twitter"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-reddit-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page on Reddit"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="../assets/icons/reddit-sticky.svg"
+                    alt="Reddit"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-email-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page via email"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="../assets/icons/envelope-sticky.svg"
+                    alt="Email"
+                  />
+                </a>
+              </li>
+            </ul>
 
-                    <div id="sticky-drop" class="sticky-social__drop--hidden"></div>
+            <div id="sticky-drop" class="sticky-social__drop--hidden"></div>
+          </div>
+        </aside>
 
-                </div>
-            </aside>
+        <article class="article">
+          <div class="article__title-container">
+            <h1 class="article__title">
+              Toronto Clubs: What to Know & Where to Go
+            </h1>
+            <h2 class="article__sub-title">
+              A Comedian’s Take on the West-end Comedy Clubs and Spaces You
+              Should Know
+            </h2>
+          </div>
 
-            <article class="article">
+          <div class="article__content block--dark">
+            <div class="article__meta">
+              <p>By Danton Lamar</p>
+              <p>September 2023</p>
+            </div>
 
-                <div class="article__title-container">
-                    <h1 class="article__title">Toronto Clubs: What to Know & Where to Go</h1>
-                    <h2 class="article__sub-title">A Comedian’s Take on the West-end Comedy Clubs and Spaces You Should Know</h2>
-                </div>
+            <p class="article__txt">
+              The Toronto comedy scene is one of the best in the world. That
+              said, comics know their best chance to make money is outside
+              Canada. Yup, that means we lose a lot of the greats… But the
+              talent here rivals New York, LA, and London at generally a
+              fraction of the price. See the up-and-coming comics behind your
+              favorite sitcoms before they hit it big-ger. Some of the writers
+              from Letterkenny frequent these Toronto hot spots.
+            </p>
+            <p class="article__txt">
+              Before we go any further, this article is about “indy comedy” here
+              in the 6ix. (Gross, I just did that, I know.) There are some clubs
+              we will not talk about that have clubs across the country. They
+              exist, they have shows and funny comics. But I have no doubt
+              you’ll see better shows at the venues below than the comedy
+              conglomerates. Get ready for comedy in small basements, packed
+              laughing audiences, and comics you’ll want to remember! And to be
+              even more specific, we’re only talking about the West end.
+            </p>
+            <p class="article__txt">
+              After the pandemic, there was an explosion of comedy clubs on the
+              Toronto scene. In February and March of 2022, five new clubs
+              opened. All battling against established giants of the scene, the
+              indy clubs push for more variety among ownership, producers, and
+              comedians.
+            </p>
+            <p class="article__txt">
+              Comedy clubs like the Comedy Lab, Backroom Comedy, and Nothing
+              Fancy all push the envelope in their own ways. Spaces like Tall
+              Boys, Wenona, and Tonight Bar have been integral in helping young
+              comics and producers grow their voices in appreciative
+              surroundings.
+            </p>
+            <p class="article__txt">
+              Be warned, not every show is your cup of tea but I’ll tell you
+              what you can expect from our list of indy comedy clubs and spaces.
+            </p>
 
-                <div class="article__content block--dark">
-                    <div class="article__meta">
-                        <p>By Danton Lamar</p>
-                        <p>September 2023</p>
-                    </div>
+            <section class="article__section">
+              <h3 class="article__section-heading">Clubs</h3>
+              <p class="article__txt">
+                These are our favorite clubs dedicated to standup comedy.
+              </p>
 
-                    <p class="article__txt">The Toronto comedy scene is one of the best in the world. That said, comics know their best chance to make money is outside Canada. Yup, that means we lose a lot of the greats… But the talent here rivals New York, LA, and London at generally a fraction of the price. See the up-and-coming comics behind your favorite sitcoms before they hit it big-ger. Some of the writers from Letterkenny frequent these Toronto hot spots.</p>
-                    <p class="article__txt">Before we go any further, this article is about “indy comedy” here in the 6ix. (Gross, I just did that, I know.)  There are some clubs we will not talk about that have clubs across the country. They exist, they have shows and funny comics. But I have no doubt you’ll see better shows at the venues below than the comedy conglomerates. Get ready for comedy in small basements, packed laughing audiences, and comics you’ll want to remember! And to be even more specific, we’re only talking about the West end. </p>
-                    <p class="article__txt">After the pandemic, there was an explosion of comedy clubs on the Toronto scene. In February and March of 2022, five new clubs opened. All battling against established giants of the scene, the indy clubs push for more variety among ownership, producers, and comedians.</p>
-                    <p class="article__txt">Comedy clubs like the Comedy Lab, Backroom Comedy, and Nothing Fancy all push the envelope in their own ways. Spaces like Tall Boys, Wenona, and Tonight Bar have been integral in helping young comics and producers grow their voices in appreciative surroundings.</p>
-                    <p class="article__txt">Be warned, not every show is your cup of tea but I’ll tell you what you can expect from our list of indy comedy clubs and spaces.</p>
+              <section class="article__subsection">
+                <h4 class="article__subsection-heading">The Comedy Lab</h4>
 
-                    <section class="article__section">
-                        <h3 class="article__section-heading">Clubs</h3>
-                        <p class="article__txt">These are our favorite clubs dedicated to standup comedy.</p>
+                <p class="article__txt">
+                  Toronto’s only black-owned and entirely minority-run comedy
+                  club. Reminiscent of a small NYC club, the Comedy Lab puts
+                  together some of the hottest lineups of local and touring
+                  acts. Creating a fun and safe atmosphere for challenging yet
+                  thoughtful comedy. As the home of the next generation of
+                  minority comics, the Lab focuses on elevating minority voices
+                  in a friendly and supportive environment. Produced by Werd
+                  Entertainment, and sponsored by Street2Ivy as well as
+                  Amsterdam Brewery, this club works to make sure comedians from
+                  all backgrounds have somewhere to call home. They have brought
+                  the NYC cellar comedy scene to Toronto, with their hype shows
+                  and tucked-away speakeasy basement space. Low ceilings and big
+                  laughs make you feel like you’re in the biggest club in the
+                  city.
+                </p>
 
-                        <section class="article__subsection">
-                            <h4 class="article__subsection-heading">The Comedy Lab</h4>
+                <p class="article__txt--hlt">
+                  Location: <br />298 Brunswick Ave, Toronto, ON M5S 2M7
+                </p>
+                <p class="article__txt--hlt">
+                  Show Days: <br />Thursday, Friday, & Saturday @ 8 & 10 pm
+                </p>
+                <p class="article__txt--hlt">
+                  Open Mics: <br />Thursday & Friday (Saturdays June-August) @
+                  10 pm - Sign up @ 9:30
+                </p>
+              </section>
 
-                            <p class="article__txt">Toronto’s only black-owned and entirely minority-run comedy club. Reminiscent of a small NYC club, the Comedy Lab puts together some of the hottest lineups of local and touring acts. Creating a fun and safe atmosphere for challenging yet thoughtful comedy. As the home of the next generation of minority comics, the Lab focuses on elevating minority voices in a friendly and supportive environment. Produced by Werd Entertainment, and sponsored by Street2Ivy as well as Amsterdam Brewery, this club works to make sure comedians from all backgrounds have somewhere to call home. They have brought the NYC cellar comedy scene to Toronto, with their hype shows and tucked-away speakeasy basement space. Low ceilings and big laughs make you feel like you’re in the biggest club in the city.</p>
+              <section class="article__subsection">
+                <h4 class="article__subsection-heading">Backroom Comedy</h4>
 
-                            <p class="article__txt--hlt">Location: <br>298 Brunswick Ave, Toronto, ON M5S 2M7</p>
-                            <p class="article__txt--hlt">Show Days: <br>Thursday, Friday, & Saturday @ 8 & 10 pm</p>
-                            <p class="article__txt--hlt">Open Mics: <br>Thursday & Friday (Saturdays June-August) @ 10 pm - Sign up @ 9:30</p>
-                        </section>
+                <p class="article__txt">
+                  Run by Bubbie’s Boys, this club is another cozy basement laugh
+                  factory. Serving speakeasy vibes this club has quickly become
+                  a local institution. Putting on great shows 5 nights a week
+                  featuring the cream of Canada’s crop. Described as a “Comedy
+                  Club and Content Machine run by comedians,” each show is a
+                  uniquely funny experience. From their crowd work shows to
+                  Turkish and Mandarin language comedy nights, Brandon Sobel and
+                  Ariel Kagan pull out all the stops to make their shows fun and
+                  engaging for everyone who comes. A small club but big fun any
+                  night of the week!
+                </p>
 
-                        <section class="article__subsection">
-                            <h4 class="article__subsection-heading">Backroom Comedy</h4>
+                <p class="article__txt--hlt">
+                  Location: <br />814 Bloor St. W, Toronto, ON M6G 1L9
+                </p>
+                <p class="article__txt--hlt">
+                  Show Days: <br />Wednesday, Thursday, Friday, Saturday, &
+                  Sunday @ 8 & 10 pm
+                </p>
+                <p class="article__txt--hlt">Open Mics: <br />None</p>
+              </section>
 
-                            <p class="article__txt">Run by Bubbie’s Boys, this club is another cozy basement laugh factory. Serving speakeasy vibes this club has quickly become a local institution. Putting on great shows 5 nights a week featuring the cream of Canada’s crop. Described as a “Comedy Club and Content Machine run by comedians,” each show is a uniquely funny experience. From their crowd work shows to Turkish and Mandarin language comedy nights, Brandon Sobel and Ariel Kagan pull out all the stops to make their shows fun and engaging for everyone who comes. A small club but big fun any night of the week!</p>
+              <section class="article__subsection">
+                <h4 class="article__subsection-heading">Comedy Bar</h4>
 
-                            <p class="article__txt--hlt">Location: <br>814 Bloor St. W, Toronto, ON M6G 1L9</p>
-                            <p class="article__txt--hlt">Show Days: <br>Wednesday, Thursday, Friday, Saturday, & Sunday @ 8 & 10 pm</p>
-                            <p class="article__txt--hlt">Open Mics: <br>None</p>
-                        </section>
+                <p class="article__txt">
+                  A fun and inexpensive hub for indy comedy producers to grow
+                  their skills and audience. Unlike The Comedy Lab and Backroom
+                  Comedy, Comedy Bar is a comedy club, that exclusively provides
+                  space to different producers. Management of the club chooses
+                  who has shows when, but does not choose the lineups. I make
+                  this distinction because each show is truly different. There
+                  is always something happening there and big names do drop in
+                  from time to time. With two locations, be sure to check to
+                  which one you’re supposed to head.
+                </p>
 
-                        <section class="article__subsection">
-                            <h4 class="article__subsection-heading">Comedy Bar</h4>
+                <p class="article__txt--hlt">
+                  Location: <br />945 Bloor St W, Toronto, ON M6H 1L5
+                  <br />East: 2800 Danforth Ave, Toronto, ON M4C 1M1
+                </p>
+                <p class="article__txt--hlt">
+                  Show Days: <br />Monday - Sunday @ Various times
+                </p>
+                <p class="article__txt--hlt">
+                  Open Mics: <br />Bucket Mics Sunday & Tuesday
+                </p>
+              </section>
 
-                            <p class="article__txt">A fun and inexpensive hub for indy comedy producers to grow their skills and audience. Unlike The Comedy Lab and Backroom Comedy, Comedy Bar is a comedy club, that exclusively provides space to different producers. Management of the club chooses who has shows when, but does not choose the lineups. I make this distinction because each show is truly different. There is always something happening there and big names do drop in from time to time. With two locations, be sure to check to which one you’re supposed to head.</p>
+              <section class="article__subsection">
+                <h4 class="article__subsection-heading">The Corner</h4>
 
-                            <p class="article__txt--hlt">Location: <br>945 Bloor St W, Toronto, ON M6H 1L5 <br>East: 2800 Danforth Ave, Toronto, ON M4C 1M1</p>
-                            <p class="article__txt--hlt">Show Days: <br>Monday - Sunday @ Various times</p>
-                            <p class="article__txt--hlt">Open Mics: <br>Bucket Mics Sunday & Tuesday</p>
-                        </section>
+                <p class="article__txt">
+                  It’s “so small it’s funny.” This club has been a Toronto
+                  comedy institution since 2015. Formerly the smallest club in
+                  the city, its hilarious shows have made its huge presence
+                  known. Originally setting the bar for indy comedy clubs in the
+                  city many clubs owe the owner Joe a debt of gratitude. From
+                  day one, this club has been a home for local rising stars and
+                  veteran comics looking to flex or work out new material. The
+                  Corner has been
+                  <span class="txt-bold txt-underline">the</span> place
+                  showcasing the wealth of local talent for nearly a decade.
+                  Their roster of killer comics will always leave you in
+                  stitches.
+                </p>
 
-                        <section class="article__subsection">
-                            <h4 class="article__subsection-heading">The Corner</h4>
+                <p class="article__txt--hlt">
+                  Location: <br />243 Queen St. W, Toronto, ON M5V 1Z4
+                </p>
+                <p class="article__txt--hlt">
+                  Show Days: <br />Tuesday, Wednesday, Thursday, Friday,
+                  Saturday, & Sunday @ 8 & 10 pm
+                </p>
+                <p class="article__txt--hlt">
+                  Open Mics: <br />Tuesdays - Sign up in advance - see their
+                  site for details
+                </p>
+              </section>
+            </section>
+            <section>
+              <h3 class="article__section-heading">Spaces</h3>
+              <p class="article__txt">
+                These are great places to go watch comedy though they are not
+                clubs dedicated to our favorite craft.
+              </p>
 
-                            <p class="article__txt">It’s “so small it’s funny.” This club has been a Toronto comedy institution since 2015. Formerly the smallest club in the city, its hilarious shows have made its huge presence known. Originally setting the bar for indy comedy clubs in the city many clubs owe the owner Joe a debt of gratitude. From day one, this club has been a home for local rising stars and veteran comics looking to flex or work out new material. The Corner has been <span class="txt-bold txt-underline">the</span> place showcasing the wealth of local talent for nearly a decade. Their roster of killer comics will always leave you in stitches.</p>
+              <section class="article__subsection">
+                <h4 class="article__subsection-heading">Tall Boys</h4>
 
-                            <p class="article__txt--hlt">Location: <br>243 Queen St. W, Toronto, ON M5V 1Z4</p>
-                            <p class="article__txt--hlt">Show Days: <br>Tuesday, Wednesday, Thursday, Friday, Saturday, & Sunday @ 8 & 10 pm</p>
-                            <p class="article__txt--hlt">Open Mics: <br>Tuesdays - Sign up in advance - see their site for details</p>
-                        </section>
-                    </section>
-                    <section>
-                        <h3 class="article__section-heading">Spaces</h3>
-                        <p class="article__txt">These are great places to go watch comedy though they are not clubs dedicated to our favorite craft. </p>
+                <p class="article__txt">
+                  Named after everyone’s favorite beer can, this gastropub has
+                  an awesome little comedy cellar. Owned by a pair of brothers
+                  who grew up in the area, Tall Boys is a fun place to grab a
+                  drink and a bite with friends. Some of Toronto’s funniest
+                  comics produce their shows here. Local legends like Dave
+                  Merheje have produced shows there, and it continues to be a
+                  fun home for rising stars.
+                </p>
 
-                        <section class="article__subsection">
-                            <h4 class="article__subsection-heading">Tall Boys</h4>
+                <p class="article__txt--hlt">
+                  Location: <br />838 Bloor St W, Toronto, ON M6G 1M2
+                </p>
+                <p class="article__txt--hlt">
+                  Show Days: <br />Monday - Sunday @ Different times
+                </p>
+                <p class="article__txt--hlt">Open Mics: <br />None ATM</p>
+              </section>
 
-                            <p class="article__txt">Named after everyone’s favorite beer can, this gastropub has an awesome little comedy cellar. Owned by a pair of brothers who grew up in the area, Tall Boys is a fun place to grab a drink and a bite with friends. Some of Toronto’s funniest comics produce their shows here. Local legends like Dave Merheje have produced shows there, and it continues to be a fun home for rising stars.</p>
+              <section class="article__subsection">
+                <h4 class="article__subsection-heading">Wenona</h4>
 
-                            <p class="article__txt--hlt">Location: <br>838 Bloor St W, Toronto, ON M6G 1M2</p>
-                            <p class="article__txt--hlt">Show Days: <br>Monday - Sunday @ Different times</p>
-                            <p class="article__txt--hlt">Open Mics: <br>None ATM</p>
-                        </section>
-                        
-                        <section class="article__subsection">
-                            <h4 class="article__subsection-heading">Wenona</h4>
+                <p class="article__txt">
+                  The Wenona Craft Beer Lodge is a cozy bar towards the western
+                  edge of the Bloor West comedy stretch. Run by the same
+                  brothers as Tall Boys, this place is all about comfort and
+                  fun. With a cozy cabin feel upstairs and a kool basement
+                  performance space, it’s a great spot for whatever your night
+                  needs.
+                </p>
 
-                            <p class="article__txt">The Wenona Craft Beer Lodge is a cozy bar towards the western edge of the Bloor West comedy stretch. Run by the same brothers as Tall Boys, this place is all about comfort and fun. With a cozy cabin feel upstairs and a kool basement performance space, it’s a great spot for whatever your night needs.</p>
+                <p class="article__txt--hlt">
+                  Location: <br />838 Bloor St W, Toronto, ON M6G 1M2
+                </p>
+                <p class="article__txt--hlt">
+                  Show Days: <br />Sunday - Thursday @ Different times
+                </p>
+                <p class="article__txt--hlt">Open Mics: <br />None ATM</p>
+              </section>
 
-                            <p class="article__txt--hlt">Location: <br>838 Bloor St W, Toronto, ON M6G 1M2</p>
-                            <p class="article__txt--hlt">Show Days: <br>Sunday - Thursday @ Different times</p>
-                            <p class="article__txt--hlt">Open Mics: <br>None ATM</p>
-                        </section>
+              <section class="article__subsection">
+                <h4 class="article__subsection-heading">Tonight Bar</h4>
 
-                        <section class="article__subsection">
-                            <h4 class="article__subsection-heading">Tonight Bar</h4>
+                <p class="article__txt">
+                  The koolest stage in Toronto! A home for performance, the
+                  owner Clamp took his love for live music and created the
+                  dopest boutique bar and stage in the city. The cozy shotgun
+                  space also has a back patio with a live feed of the
+                  performance inside. You’ll love this perfectly unpretentious
+                  space. There’s always something kool happening here, lots of
+                  traveling musical acts will slay Tonight Bar’s tiny stage.
+                </p>
 
-                            <p class="article__txt">The koolest stage in Toronto! A home for performance, the owner Clamp took his love for live music and created the dopest boutique bar and stage in the city. The cozy shotgun space also has a back patio with a live feed of the performance inside. You’ll love this perfectly unpretentious space. There’s always something kool happening here, lots of traveling musical acts will slay Tonight Bar’s tiny stage.</p>
+                <p class="article__txt--hlt">
+                  Location: <br />1704 Queen St W, Toronto, ON M6R 1B3
+                </p>
+                <p class="article__txt--hlt">
+                  Show Days: <br />Sunday - Thursday @ Different times
+                </p>
+                <p class="article__txt--hlt">
+                  Open Mics: <br />Wednesday & Thursday @ 10 pm
+                </p>
+              </section>
 
-                            <p class="article__txt--hlt">Location: <br>1704 Queen St W, Toronto, ON M6R 1B3</p>
-                            <p class="article__txt--hlt">Show Days: <br>Sunday - Thursday @ Different times</p>
-                            <p class="article__txt--hlt">Open Mics: <br>Wednesday & Thursday @ 10 pm</p>
-                        </section>
+              <p class="article__txt">
+                In the interest of full disclosure, this is not an exhaustive
+                list of the clubs and comedy spaces in Toronto. It’s a great
+                place to start if you’re new to the scene. Whether you’re a
+                comedy lover, a comic, or an occasional mic’er these are good
+                places to check out.
+              </p>
+              <p class="article__txt">
+                Feel like your favorite place was snubbed? Let me know if I left
+                out your favorite club or space, and I’ll consider adding them
+                to my next list.
+              </p>
+            </section>
 
-                        <p class="article__txt">In the interest of full disclosure, this is not an exhaustive list of the clubs and comedy spaces in Toronto. It’s a great place to start if you’re new to the scene. Whether you’re a comedy lover, a comic, or an occasional mic’er these are good places to check out.</p>
-                        <p class="article__txt">Feel like your favorite place was snubbed? Let me know if I left out your favorite club or space, and I’ll consider adding them to my next list.</p>
-                    </section>
+            <a class="block__btn block__btn--clear-dk" href="../blog.html"
+              >Back to Blog page</a
+            >
+          </div>
+        </article>
 
-                    <a class="block__btn block__btn--clear-dk" href="../blog.html">Back to Blog page</a>
-
-                </div>
-
-            </article>
-            
-            <img class="graffiti graffiti--blog" srcset="../assets/images/graffiti-mobile.png 518w, ../assets/images/graffiti.png 1176w" sizes="(max-width: 350px) 80vw, (max-width: 400px) 75vw, (max-width: 485px) 65vw, (max-width: 600px) 55vw, (max-width: 1023px) 45vw, (max-width: 1900px) 550px, (min-width: 1901px) 700px" src="../assets/images/graffiti-mobile.png" loading="lazy" alt="Comedy Lab Graffiti">
-        </div>
+        <img
+          class="graffiti graffiti--blog"
+          srcset="
+            ../assets/images/graffiti-mobile.png  518w,
+            ../assets/images/graffiti.png        1176w
+          "
+          sizes="(max-width: 350px) 80vw, (max-width: 400px) 75vw, (max-width: 485px) 65vw, (max-width: 600px) 55vw, (max-width: 1023px) 45vw, (max-width: 1900px) 550px, (min-width: 1901px) 700px"
+          src="../assets/images/graffiti-mobile.png"
+          loading="lazy"
+          alt="Comedy Lab Graffiti"
+        />
+      </div>
     </main>
-    
+
     <footer class="footer" id="footer">
-        <div class="footer__container root-section">
-            <div class="footer__content">
-
-                <address class="footer__contact">
-                    <p class="footer__title">Contact Us:</p>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">
-                            <a class="footer__contact-box" href="tel:+16474474830">
-                                <img class="footer__icon" src="../assets/icons/telephone.svg" width="16" loading="lazy" alt="telephone icon">
-                                <span>647-447-4830</span>
-                            </a>
-                        </li>
-                        <li class="footer__list-item footer__contact-box">
-                            <img class="footer__icon" src="../assets/icons/envelope.svg" width="16" loading="lazy" alt="email icon">
-                            <span>comedylab@gmail.com</span>
-                        </li>
-                        <li class="footer__list-item">
-                            <div class="footer__contact-box">
-                                <img class="footer__icon" src="../assets/icons/geotag.svg" width="16" loading="lazy" alt="geotag icon">
-                                <span>The Lab416</span>
-                            </div>
-                            <span>298 Brunswick Ave, Toronto</span>
-                        </li>
-                    </ul>
-                </address>
-
-                <div class="footer__social">
-                    <p class="footer__title">Social Media:</p>
-                    <ul class="footer__social-links">
-                        <li><a class="footer__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank">
-                            <img class="boxed-icon" src="../assets/icons/instagram.svg" loading="lazy" alt="Instagram">
-                        </a></li>
-                        <li><a class="footer__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank">
-                            <img class="boxed-icon" src="../assets/icons/youtube.svg" loading="lazy" alt="YouTube">
-                        </a></li>
-                        <li><a class="footer__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank">
-                            <img class="boxed-icon" src="../assets/icons/facebook.svg" loading="lazy" alt="Facebook">
-                        </a></li>
-                        <li><a class="footer__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">
-                            <img class="boxed-icon" src="../assets/icons/eventbrite.svg" loading="lazy" alt="Eventbrite">
-                        </a></li>
-                    </ul>
+      <div class="footer__container root-section">
+        <div class="footer__content">
+          <address class="footer__contact">
+            <p class="footer__title">Contact Us:</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__contact-box" href="tel:+16474474830">
+                  <img
+                    class="footer__icon"
+                    src="../assets/icons/telephone.svg"
+                    width="16"
+                    loading="lazy"
+                    alt="telephone icon"
+                  />
+                  <span>647-447-4830</span>
+                </a>
+              </li>
+              <li class="footer__list-item footer__contact-box">
+                <img
+                  class="footer__icon"
+                  src="../assets/icons/envelope.svg"
+                  width="16"
+                  loading="lazy"
+                  alt="email icon"
+                />
+                <span>comedylab@gmail.com</span>
+              </li>
+              <li class="footer__list-item">
+                <div class="footer__contact-box">
+                  <img
+                    class="footer__icon"
+                    src="../assets/icons/geotag.svg"
+                    width="16"
+                    loading="lazy"
+                    alt="geotag icon"
+                  />
+                  <span>The Lab416</span>
                 </div>
+                <span>298 Brunswick Ave, Toronto</span>
+              </li>
+            </ul>
+          </address>
 
-                <img class="footer__logo" src="../assets/images/footer-logo.svg" width="150" loading="lazy" alt="Logo">
-            </div>
+          <div class="footer__social">
+            <p class="footer__title">Social Media:</p>
+            <ul class="footer__social-links">
+              <li>
+                <a
+                  class="footer__social-link"
+                  href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA=="
+                  target="_blank"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="../assets/icons/instagram.svg"
+                    loading="lazy"
+                    alt="Instagram"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__social-link"
+                  href="https://www.youtube.com/@werdentertainment/"
+                  target="_blank"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="../assets/icons/youtube.svg"
+                    loading="lazy"
+                    alt="YouTube"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__social-link"
+                  href="https://www.facebook.com/thecomedylabto"
+                  target="_blank"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="../assets/icons/facebook.svg"
+                    loading="lazy"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__social-link"
+                  href="https://www.eventbrite.ca/o/werd-entertainment-38479180893"
+                  target="_blank"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="../assets/icons/eventbrite.svg"
+                    loading="lazy"
+                    alt="Eventbrite"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="footer__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.16258982973!2d-79.41013572405562!3d43.665588251629906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34941ef4c6e1%3A0xbb29d4692292b41a!2sThe%20Lab416%20(Labyrinth%20Lounge)!5e0!3m2!1sen!2sca!4v1690076226721!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Google Map" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
+          <img
+            class="footer__logo"
+            src="../assets/images/footer-logo.svg"
+            width="150"
+            loading="lazy"
+            alt="Logo"
+          />
         </div>
+
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.16258982973!2d-79.41013572405562!3d43.665588251629906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34941ef4c6e1%3A0xbb29d4692292b41a!2sThe%20Lab416%20(Labyrinth%20Lounge)!5e0!3m2!1sen!2sca!4v1690076226721!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            aria-label="Google Map"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </footer>
 
     <div class="copyright">
-        <p class="copyright__text">&#169; Comedy Lab 2023</p>
-        <div class="copyright__brand">
-            <p class="copyright__text copyright__text--low">Powered by Werd Entertainment</p>
-            <img class="copyright__werd-logo" src="../assets/icons/werd-ent.svg" width="25" alt="Werd Entertainment logo">
-        </div>
-        <p class="copyright__credit copyright__text">Background color splash by <a class="copyright__link" href="https://www.instagram.com/clrsplsh.tattoo/" target="_blank">@clrsplash.tattoo</a> on IG</p>
-        <p class="copyright__text">All images and content may not be used <br> without permission</p>           
+      <p class="copyright__text">&#169; Comedy Lab 2023</p>
+      <div class="copyright__brand">
+        <p class="copyright__text copyright__text--low">
+          Powered by Werd Entertainment
+        </p>
+        <img
+          class="copyright__werd-logo"
+          src="../assets/icons/werd-ent.svg"
+          width="25"
+          alt="Werd Entertainment logo"
+        />
+      </div>
+      <p class="copyright__credit copyright__text">
+        Background color splash by
+        <a
+          class="copyright__link"
+          href="https://www.instagram.com/clrsplsh.tattoo/"
+          target="_blank"
+          >@clrsplash.tattoo</a
+        >
+        on IG
+      </p>
+      <p class="copyright__text">
+        All images and content may not be used <br />
+        without permission
+      </p>
     </div>
-    
-</body>
+  </body>
 </html>

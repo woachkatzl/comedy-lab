@@ -525,6 +525,9 @@ section.block:last-of-type {
   .block__shows--two {
     width: 65.4%;
   }
+  .block__shows--center {
+    margin: 40px auto 70px auto;
+  }
   .block__show-link {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0px;

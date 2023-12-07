@@ -1,181 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get unique insights about the world of comedy with our Comedy Lab blog.Learn about the best Toronto comedy venues to explore, local events worth looking out for, latest industry news and more!">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get unique insights about the world of comedy with our Comedy Lab blog.Learn about the best Toronto comedy venues to explore, local events worth looking out for, latest industry news and more!"
+    />
+    <meta name="version" content="1.1" />
     <title>Comedy Lab Blog</title>
-    <link rel="shortcut icon" href="assets/icons/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/icons/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css?v=1.1" />
     <script src="scripts/page.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container root-section">
+      <div class="header__container root-section">
+        <a class="header__home" href="/" aria-label="Homepage">
+          <img
+            class="header__logo"
+            src="assets/images/logo.svg"
+            fetchpriority="high"
+            loading="eager"
+            alt="Logo"
+          />
+        </a>
 
-            <a class="header__home" href="/" aria-label="Homepage">
-                <img class="header__logo" src="assets/images/logo.svg" fetchpriority="high" loading="eager" alt="Logo">
-            </a>
-            
-            <div id="header-menu" class="header__menu">
-                <div id="header-menu-btn" class="header__menu-btn" role="button" aria-haspopup="menu" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle main menu">
-                    <div id="bar1" class="header__menu-bar"></div>
-                    <div id="bar2" class="header__menu-bar"></div>
-                    <div id="bar3" class="header__menu-bar"></div>
-                </div>
-                <nav id="header-nav" class="header__nav" aria-label="Site navigation menu">
-                    <ul class="header__nav-list">
-                        <li><a class="header__nav-link" href="index.html">Home</a></li>
-                        <li><a class="header__nav-link" href="index.html#about">About us</a></li>
-                        <li><a class="header__nav-link" href="index.html#monthly-shows">Monthly shows</a></li>
-                        <li><a class="header__nav-link" href="index.html#weekly-shows">Weekly shows</a></li>
-                        <li><a class="header__nav-link" href="index.html#open-mics">Open mics</a></li>
-                        <li><a class="header__nav-link" href="blog.html">Blog</a></li>
-                        <li><a class="header__nav-link" href="#footer">Contact us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="header-menu-bg" class="header__menu-bg"></div>
-
-            <img class="header__banner" srcset="assets/images/banner-mobile.webp 1668w, assets/images/banner.webp 2386w" sizes="(min-width: 1901px) 1900px,(min-width: 768px) 100vw, 830px" src="assets/images/banner-mobile.webp" fetchpriority="high" loading="eager" alt="Comedy Lab Toronto">
-
-            <ul class="header__social">
-                <li><a class="header__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank" aria-label="Instagram">
-                    <img class="boxed-icon" src="assets/icons/instagram.svg" fetchpriority="high" loading="eager" alt="Instagram">
-                </a></li>
-                <li><a class="header__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank" aria-label="YouTube">
-                    <img class="boxed-icon" src="assets/icons/youtube.svg" fetchpriority="high" loading="eager" alt="YouTube">
-                </a></li>
-                <li><a class="header__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank"  aria-label="Facebook">
-                    <img class="boxed-icon" src="assets/icons/facebook.svg" fetchpriority="high" loading="eager" alt="Facebook">
-                </a></li>
-                <li><a class="header__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank"  aria-label="Eventbrite">
-                    <img class="boxed-icon" src="assets/icons/eventbrite.svg" fetchpriority="high" loading="eager" alt="Eventbrite">
-                </a></li>
+        <div id="header-menu" class="header__menu">
+          <div
+            id="header-menu-btn"
+            class="header__menu-btn"
+            role="button"
+            aria-haspopup="menu"
+            aria-controls="header-nav"
+            aria-expanded="false"
+            aria-label="Toggle main menu"
+          >
+            <div id="bar1" class="header__menu-bar"></div>
+            <div id="bar2" class="header__menu-bar"></div>
+            <div id="bar3" class="header__menu-bar"></div>
+          </div>
+          <nav
+            id="header-nav"
+            class="header__nav"
+            aria-label="Site navigation menu"
+          >
+            <ul class="header__nav-list">
+              <li><a class="header__nav-link" href="index.html">Home</a></li>
+              <li>
+                <a class="header__nav-link" href="index.html#about">About us</a>
+              </li>
+              <li>
+                <a class="header__nav-link" href="index.html#monthly-shows"
+                  >Monthly shows</a
+                >
+              </li>
+              <li>
+                <a class="header__nav-link" href="index.html#weekly-shows"
+                  >Weekly shows</a
+                >
+              </li>
+              <li>
+                <a class="header__nav-link" href="index.html#open-mics"
+                  >Open mics</a
+                >
+              </li>
+              <li><a class="header__nav-link" href="blog.html">Blog</a></li>
+              <li><a class="header__nav-link" href="#footer">Contact us</a></li>
             </ul>
+          </nav>
         </div>
+        <div id="header-menu-bg" class="header__menu-bg"></div>
+
+        <img
+          class="header__banner"
+          srcset="
+            assets/images/banner-mobile.webp 1668w,
+            assets/images/banner.webp        2386w
+          "
+          sizes="(min-width: 1901px) 1900px,(min-width: 768px) 100vw, 830px"
+          src="assets/images/banner-mobile.webp"
+          fetchpriority="high"
+          loading="eager"
+          alt="Comedy Lab Toronto"
+        />
+
+        <ul class="header__social">
+          <li>
+            <a
+              class="header__social-link"
+              href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <img
+                class="boxed-icon"
+                src="assets/icons/instagram.svg"
+                fetchpriority="high"
+                loading="eager"
+                alt="Instagram"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="header__social-link"
+              href="https://www.youtube.com/@werdentertainment/"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <img
+                class="boxed-icon"
+                src="assets/icons/youtube.svg"
+                fetchpriority="high"
+                loading="eager"
+                alt="YouTube"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="header__social-link"
+              href="https://www.facebook.com/thecomedylabto"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <img
+                class="boxed-icon"
+                src="assets/icons/facebook.svg"
+                fetchpriority="high"
+                loading="eager"
+                alt="Facebook"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="header__social-link"
+              href="https://www.eventbrite.ca/o/werd-entertainment-38479180893"
+              target="_blank"
+              aria-label="Eventbrite"
+            >
+              <img
+                class="boxed-icon"
+                src="assets/icons/eventbrite.svg"
+                fetchpriority="high"
+                loading="eager"
+                alt="Eventbrite"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="main">
-        <div class="page-main-container root-section">
-
-            <aside class="sticky-container sticky-container--low sticky-container--short">
-                <div class="sticky-social">
-                    
-                    <div class="sticky-social__btn" role="button" aria-label="Share this page" aria-haspopup="menu" aria-controls="sticky-links sticky-drop" aria-expanded="false">
-                        <img class="sticky-social__img" src="assets/icons/share-icon.svg" loading="lazy" alt="Share icon">
-                        <img class="sticky-social__text" src="assets/icons/share.svg" loading="lazy" alt="Share">
-                        <div id="sticky-arrow"></div>
-                    </div>
-                    
-                    <ul id="sticky-links" class="sticky-social__list">
-                        <li><a class="sticky-social__link" id="sticky-facebook-share" href="" target="_blank"  aria-label="Share page on Facebook">
-                            <img class="boxed-icon" src="assets/icons/facebook-sticky.svg" alt="Facebook">
-                        </a></li>
-                        <li><a class="sticky-social__link" id="sticky-whatsapp-share" href="" target="_blank" aria-label="Share page on Whatsapp">
-                            <img class="boxed-icon" src="assets/icons/whatsapp-sticky.svg" alt="WhatsApp">
-                        </a></li>
-                        <li><a class="sticky-social__link" id="sticky-twitter-share" href="" target="_blank" aria-label="Share page on Twitter">
-                            <img class="boxed-icon" src="assets/icons/twitter-sticky.svg" alt="Twitter">
-                        </a></li>
-                        <li><a class="sticky-social__link" id="sticky-reddit-share" href="" target="_blank" aria-label="Share page on Reddit">
-                            <img class="boxed-icon" src="assets/icons/reddit-sticky.svg" alt="Reddit">
-                        </a></li>
-                        <li><a class="sticky-social__link" id="sticky-email-share" href="" target="_blank" aria-label="Share page via email">
-                            <img class="boxed-icon" src="assets/icons/envelope-sticky.svg" alt="Email">
-                        </a></li>
-                    </ul>
-
-                    <div id="sticky-drop" class="sticky-social__drop--hidden"></div>
-
-                </div>
-            </aside>
-
-            <div class="blog-container">
-                <h1 class="page-title page-title--grid">Comedy Lab Blog</h1>
-
-                <section class="block block--dark block--article">
-                    <div class="block__content--grow">
-                        <h2 class="block__title block__title--blog">Toronto Clubs: What to Know & Where to Go</h2>
-                        <p class="block__txt">A Comedian’s Take on the West-end Comedy Clubs and Spaces You Should Know</p>
-                    </div>
-                    <a class="block__btn block__btn--clear-dk" href="blog-articles/toronto-clubs.html">Read the article</a>
-                </section>
-
+      <div class="page-main-container root-section">
+        <aside
+          class="sticky-container sticky-container--low sticky-container--short"
+        >
+          <div class="sticky-social">
+            <div
+              class="sticky-social__btn"
+              role="button"
+              aria-label="Share this page"
+              aria-haspopup="menu"
+              aria-controls="sticky-links sticky-drop"
+              aria-expanded="false"
+            >
+              <img
+                class="sticky-social__img"
+                src="assets/icons/share-icon.svg"
+                loading="lazy"
+                alt="Share icon"
+              />
+              <img
+                class="sticky-social__text"
+                src="assets/icons/share.svg"
+                loading="lazy"
+                alt="Share"
+              />
+              <div id="sticky-arrow"></div>
             </div>
-            
-            <img class="graffiti graffiti--blog" srcset="assets/images/graffiti-mobile.png 518w, assets/images/graffiti.png 1176w" sizes="(max-width: 350px) 80vw, (max-width: 400px) 75vw, (max-width: 485px) 65vw, (max-width: 600px) 55vw, (max-width: 1023px) 45vw, (max-width: 1900px) 550px, (min-width: 1901px) 700px" src="assets/images/graffiti-mobile.png" loading="lazy" alt="Comedy Lab Graffiti">
+
+            <ul id="sticky-links" class="sticky-social__list">
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-facebook-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page on Facebook"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="assets/icons/facebook-sticky.svg"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-whatsapp-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page on Whatsapp"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="assets/icons/whatsapp-sticky.svg"
+                    alt="WhatsApp"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-twitter-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page on Twitter"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="assets/icons/twitter-sticky.svg"
+                    alt="Twitter"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-reddit-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page on Reddit"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="assets/icons/reddit-sticky.svg"
+                    alt="Reddit"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="sticky-social__link"
+                  id="sticky-email-share"
+                  href=""
+                  target="_blank"
+                  aria-label="Share page via email"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="assets/icons/envelope-sticky.svg"
+                    alt="Email"
+                  />
+                </a>
+              </li>
+            </ul>
+
+            <div id="sticky-drop" class="sticky-social__drop--hidden"></div>
+          </div>
+        </aside>
+
+        <div class="blog-container">
+          <h1 class="page-title page-title--grid">Comedy Lab Blog</h1>
+
+          <section class="block block--dark block--article">
+            <div class="block__content--grow">
+              <h2 class="block__title block__title--blog">
+                Toronto Clubs: What to Know & Where to Go
+              </h2>
+              <p class="block__txt">
+                A Comedian’s Take on the West-end Comedy Clubs and Spaces You
+                Should Know
+              </p>
+            </div>
+            <a
+              class="block__btn block__btn--clear-dk"
+              href="blog-articles/toronto-clubs.html"
+              >Read the article</a
+            >
+          </section>
         </div>
+
+        <img
+          class="graffiti graffiti--blog"
+          srcset="
+            assets/images/graffiti-mobile.png  518w,
+            assets/images/graffiti.png        1176w
+          "
+          sizes="(max-width: 350px) 80vw, (max-width: 400px) 75vw, (max-width: 485px) 65vw, (max-width: 600px) 55vw, (max-width: 1023px) 45vw, (max-width: 1900px) 550px, (min-width: 1901px) 700px"
+          src="assets/images/graffiti-mobile.png"
+          loading="lazy"
+          alt="Comedy Lab Graffiti"
+        />
+      </div>
     </main>
 
     <footer class="footer" id="footer">
-        <div class="footer__container root-section">
-            <div class="footer__content">
-
-                <address class="footer__contact">
-                    <p class="footer__title">Contact Us:</p>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">
-                            <a class="footer__contact-box" href="tel:+16474474830">
-                                <img class="footer__icon" src="assets/icons/telephone.svg" width="16" loading="lazy" alt="telephone icon">
-                                <span>647-447-4830</span>
-                            </a>
-                        </li>
-                        <li class="footer__list-item footer__contact-box">
-                            <img class="footer__icon" src="assets/icons/envelope.svg" width="16" loading="lazy" alt="email icon">
-                            <span>comedylab@gmail.com</span>
-                        </li>
-                        <li class="footer__list-item">
-                            <div class="footer__contact-box">
-                                <img class="footer__icon" src="assets/icons/geotag.svg" width="16" loading="lazy" alt="geotag icon">
-                                <span>The Lab416</span>
-                            </div>
-                            <span>298 Brunswick Ave, Toronto</span>
-                        </li>
-                    </ul>
-                </address>
-
-                <div class="footer__social">
-                    <p class="footer__title">Social Media:</p>
-                    <ul class="footer__social-links">
-                        <li><a class="footer__social-link" href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA==" target="_blank">
-                            <img class="boxed-icon" src="assets/icons/instagram.svg" loading="lazy" alt="Instagram">
-                        </a></li>
-                        <li><a class="footer__social-link" href="https://www.youtube.com/@werdentertainment/" target="_blank">
-                            <img class="boxed-icon" src="assets/icons/youtube.svg" loading="lazy" alt="YouTube">
-                        </a></li>
-                        <li><a class="footer__social-link" href="https://www.facebook.com/thecomedylabto" target="_blank">
-                            <img class="boxed-icon" src="assets/icons/facebook.svg" loading="lazy" alt="Facebook">
-                        </a></li>
-                        <li><a class="footer__social-link" href="https://www.eventbrite.ca/o/werd-entertainment-38479180893" target="_blank">
-                            <img class="boxed-icon" src="assets/icons/eventbrite.svg" alt="Eventbrite">
-                        </a></li>
-                    </ul>
+      <div class="footer__container root-section">
+        <div class="footer__content">
+          <address class="footer__contact">
+            <p class="footer__title">Contact Us:</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__contact-box" href="tel:+16474474830">
+                  <img
+                    class="footer__icon"
+                    src="assets/icons/telephone.svg"
+                    width="16"
+                    loading="lazy"
+                    alt="telephone icon"
+                  />
+                  <span>647-447-4830</span>
+                </a>
+              </li>
+              <li class="footer__list-item footer__contact-box">
+                <img
+                  class="footer__icon"
+                  src="assets/icons/envelope.svg"
+                  width="16"
+                  loading="lazy"
+                  alt="email icon"
+                />
+                <span>comedylab@gmail.com</span>
+              </li>
+              <li class="footer__list-item">
+                <div class="footer__contact-box">
+                  <img
+                    class="footer__icon"
+                    src="assets/icons/geotag.svg"
+                    width="16"
+                    loading="lazy"
+                    alt="geotag icon"
+                  />
+                  <span>The Lab416</span>
                 </div>
+                <span>298 Brunswick Ave, Toronto</span>
+              </li>
+            </ul>
+          </address>
 
-                <img class="footer__logo" src="assets/images/footer-logo.svg" loading="lazy" width="150" alt="Logo">
-            </div>
+          <div class="footer__social">
+            <p class="footer__title">Social Media:</p>
+            <ul class="footer__social-links">
+              <li>
+                <a
+                  class="footer__social-link"
+                  href="https://instagram.com/comedylabto?igshid=MzRlODBiNWFlZA=="
+                  target="_blank"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="assets/icons/instagram.svg"
+                    loading="lazy"
+                    alt="Instagram"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__social-link"
+                  href="https://www.youtube.com/@werdentertainment/"
+                  target="_blank"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="assets/icons/youtube.svg"
+                    loading="lazy"
+                    alt="YouTube"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__social-link"
+                  href="https://www.facebook.com/thecomedylabto"
+                  target="_blank"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="assets/icons/facebook.svg"
+                    loading="lazy"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__social-link"
+                  href="https://www.eventbrite.ca/o/werd-entertainment-38479180893"
+                  target="_blank"
+                >
+                  <img
+                    class="boxed-icon"
+                    src="assets/icons/eventbrite.svg"
+                    alt="Eventbrite"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="footer__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.16258982973!2d-79.41013572405562!3d43.665588251629906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34941ef4c6e1%3A0xbb29d4692292b41a!2sThe%20Lab416%20(Labyrinth%20Lounge)!5e0!3m2!1sen!2sca!4v1690076226721!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Google Map" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
+          <img
+            class="footer__logo"
+            src="assets/images/footer-logo.svg"
+            loading="lazy"
+            width="150"
+            alt="Logo"
+          />
         </div>
+
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.16258982973!2d-79.41013572405562!3d43.665588251629906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34941ef4c6e1%3A0xbb29d4692292b41a!2sThe%20Lab416%20(Labyrinth%20Lounge)!5e0!3m2!1sen!2sca!4v1690076226721!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            aria-label="Google Map"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </footer>
 
     <div class="copyright">
-        <p class="copyright__text">&#169; Comedy Lab 2023</p>
-        <div class="copyright__brand">
-            <p class="copyright__text copyright__text--low">Powered by Werd Entertainment</p>
-            <img class="copyright__werd-logo" src="assets/icons/werd-ent.svg" width="25" alt="Werd Entertainment logo">
-        </div>
-        <p class="copyright__credit copyright__text">Background color splash by <a class="copyright__link" href="https://www.instagram.com/clrsplsh.tattoo/" target="_blank">@clrsplash.tattoo</a> on IG</p>
-        <p class="copyright__text">All images and content may not be used <br> without permission</p>           
+      <p class="copyright__text">&#169; Comedy Lab 2023</p>
+      <div class="copyright__brand">
+        <p class="copyright__text copyright__text--low">
+          Powered by Werd Entertainment
+        </p>
+        <img
+          class="copyright__werd-logo"
+          src="assets/icons/werd-ent.svg"
+          width="25"
+          alt="Werd Entertainment logo"
+        />
+      </div>
+      <p class="copyright__credit copyright__text">
+        Background color splash by
+        <a
+          class="copyright__link"
+          href="https://www.instagram.com/clrsplsh.tattoo/"
+          target="_blank"
+          >@clrsplash.tattoo</a
+        >
+        on IG
+      </p>
+      <p class="copyright__text">
+        All images and content may not be used <br />
+        without permission
+      </p>
     </div>
-    
-</body>
+  </body>
 </html>
